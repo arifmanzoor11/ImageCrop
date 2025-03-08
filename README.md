@@ -1,6 +1,4 @@
 # Image Cropper Webapp
-# Image Cropper Webapp
-
 ## Overview
 The **Image Cropper Webapp** is a simple and efficient Flask-based web application that allows users to upload images, resize them using two different modes (Stretch or Cover), and download the processed images in various formats.
 
