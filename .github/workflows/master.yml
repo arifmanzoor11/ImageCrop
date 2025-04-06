@@ -18,21 +18,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Deploy to FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: Verify Server Connection
+        run: |
+          nc -zv ${{ secrets.FTP_SERVER }} 22 || nc -zv ${{ secrets.FTP_SERVER }} 21
+
+      - name: Deploy via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
+          server: ${{ secrets.FTP_SERVER }}
+          port: 22  # Standard SFTP port
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./
-          server-dir: ./
-          dangerous-clean-slate: false
-          exclude: |
-            **/.git*
-            **/.github/**
-            **/node_modules/**
-            **/.env*
-            **/*.zip
-            **/vendor/**
-            README.md
-            .gitignore
+          local_path: './*'
+          remote_path: './'
+          sftp_only: true
+          exclude: '.git*,.github*,node_modules*,.env*,*.zip,vendor*,README.md'
