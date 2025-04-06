@@ -3,92 +3,189 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Cropper & Preview</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Image Processor</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Image Cropper Webapp is a free online tool that lets you crop, resize, and convert images into multiple formats quickly and easily.">
+  <meta name="keywords" content="image cropper, image resize, online image editor, crop images, convert images, free image tool">
+  <meta name="author" content="Your Name">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Image Cropper Webapp">
+  <meta property="og:description" content="Crop and resize your images online with ease using our free tool.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:image" content="https://yourdomain.com/path/to/preview-image.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Image Cropper Webapp">
+  <meta name="twitter:description" content="Crop and resize your images online quickly with our free Image Cropper Webapp.">
+  <meta name="twitter:image" content="https://yourdomain.com/path/to/preview-image.jpg">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
   <style>
-    /* Optional: Style for preview container */
-    #imagePreview img {
-      max-width: 100%;
-      height: auto;
+    body {
+      background-color: #f8f9fa;
+    }
+    .preview-container {
+      margin: 20px 0;
+      padding: 10px;
+      background: #f8f9fa;
+      border-radius: 8px;
+      display: flex;
+    }
+    .preview-item {
+      margin: 5px;
+      text-align: center;
+    }
+    .preview-image {
+      max-width: 150px;
+      max-height: 150px;
+      object-fit: contain;
+      margin-bottom: 5px;
+    }
+    .filename {
+      font-size: 0.8em;
+      color: #6c757d;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 150px;
+    }
+    #processingStatus {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    #currentFileStatus {
+      font-size: 1.1em;
+      color: #6c757d;
+    }
+    .progress {
+      height: 25px;
+    }
+    .progress-bar {
+      font-size: 1em;
+      line-height: 25px;
     }
   </style>
 </head>
 <body class="container mt-5">
-  <h2 class="text-center">Upload Image for Cropping</h2>
-  
-  <form id="uploadForm" action="/" method="post" enctype="multipart/form-data" class="mt-4">
+  <h1 class="display-4 text-center">Image Processor</h1>
+  <p class="lead text-center">Easily crop, resize, and convert your images online in seconds.</p>
+
+  <form id="uploadForm" method="POST" enctype="multipart/form-data" class="mb-4">
     <div class="mb-3">
-      <label for="file" class="form-label">Select Images</label>
+      <label for="fileInput" class="form-label">Select Images</label>
       <input type="file" class="form-control" name="file" multiple required id="fileInput">
     </div>
-    
-    <!-- Image Preview Container -->
-    <div id="imagePreview" class="row"></div>
-    
-    <div class="row mt-3 mb-3">
-      <div class="col-md-6">
-        <label for="width" class="form-label">Width:</label>
-        <input type="number" class="form-control" name="width" value="300" required>
-      </div>
-      <div class="col-md-6">
-        <label for="height" class="form-label">Height:</label>
-        <input type="number" class="form-control" name="height" value="300" required>
-      </div>
+
+    <div id="imagePreviewContainer" class="preview-container"></div>
+
+    <div class="mb-3 mt-4">
+      <label for="width" class="form-label">Width:</label>
+      <input type="number" class="form-control" name="width" value="100" required>
+    </div>
+    <div class="mb-3">
+      <label for="height" class="form-label">Height:</label>
+      <input type="number" class="form-control" name="height" value="100" required>
+    </div>
+    <div class="mb-3">
+      <label for="format" class="form-label">Format:</label>
+      <select class="form-select" name="format">
+        <option value="PNG">PNG</option>
+        <option value="JPEG">JPEG</option>
+        <option value="BMP">BMP</option>
+        <option value="GIF">GIF</option>
+        <option value="TIFF">TIFF</option>
+        <option value="ICO">ICO</option>
+        <option value="WEBP">WebP</option>
+        <option value="PPM">PPM</option>
+        <option value="TGA">TGA</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="mode" class="form-label">Resize Mode:</label>
+      <select class="form-select" name="mode">
+        <option value="Cover">Cover</option>
+        <option value="Stretch">Stretch</option>
+      </select>
     </div>
 
-    <div class="row mt-3 mb-3">
-        <div class="col-md-6">
-            <div class="mb-3">
-                <label for="format" class="form-label">Format:</label>
-                <select class="form-select" name="format">
-                  <option value="PNG">PNG</option>
-                  <option value="JPEG">JPEG</option>
-                  <option value="BMP">BMP</option>
-                  <option value="GIF">GIF</option>
-                  <option value="TIFF">TIFF</option>
-                  <option value="ICO">ICO</option>
-                  <option value="WEBP">WebP</option>
-                  <option value="PPM">PPM</option>
-                  <option value="TGA">TGA</option>
-                </select>
-              </div>
-              
-        </div>
-        <div class="col-md-6">
-            <div class="mb-3">
-                <label for="mode" class="form-label">Resize Mode:</label>
-                <select class="form-select" name="mode">
-                  <option value="Cover">Cover</option>
-                  <option value="Stretch">Stretch</option>
-                </select>
-              </div>
-        </div>
-    </div>
     <button type="submit" class="btn btn-primary">Upload & Process</button>
   </form>
 
-  <!-- JavaScript: Show preview images upon file selection -->
+  <div id="processingStatus" style="display: none;" class="mt-4">
+    <h3 class="text-center">Processing Images</h3>
+    <div class="progress mb-3">
+      <div id="processingProgress" class="progress-bar progress-bar-striped progress-bar-animated" 
+           role="progressbar" style="width: 0%">0%</div>
+    </div>
+    <p class="text-center">Processing: <span id="currentFileName">-</span></p>
+  </div>
+
+  <h2>How It Works</h2>
+  <ul>
+    <li><strong>Upload Your Images:</strong> Select one or multiple images from your device.</li>
+    <li><strong>Customize Your Crop:</strong> Choose your desired dimensions and resize mode (Cover or Stretch).</li>
+    <li><strong>Convert Formats:</strong> Save your images in your preferred format like PNG, JPEG, BMP, and more.</li>
+    <li><strong>Download & Share:</strong> Download processed images individually or as a ZIP file for convenience.</li>
+  </ul>
+
+  <h2>Features</h2>
+  <ul>
+    <li>Live image preview before upload.</li>
+    <li>Responsive design that works on all devices.</li>
+    <li>Fast and secure image processing.</li>
+    <li>Easy-to-use interface with modern design.</li>
+  </ul>
+
+  <h2>Get Started</h2>
+  <p>Upload your images now and experience hassle-free cropping and resizing!</p>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="{{ url_for('static', filename='js/imagePreview.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/processStatus.js') }}"></script>
   <script>
-    document.getElementById('fileInput').addEventListener('change', function () {
-      const previewContainer = document.getElementById('imagePreview');
-      previewContainer.innerHTML = ''; // Clear previous previews
+    const processingStatus = new ProcessingStatus();
+    
+    document.getElementById('fileInput').addEventListener('change', function(e) {
+      updateImagePreviews(this.files);
+    });
+
+    document.getElementById('uploadForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      const submitButton = this.querySelector('button[type="submit"]');
       
-      const files = this.files;
-      if (files) {
-        Array.from(files).forEach(file => {
-          const reader = new FileReader();
-          reader.onload = function (e) {
-            const colDiv = document.createElement('div');
-            colDiv.className = 'col-md-3 mt-3';
-            const img = document.createElement('img');
-            img.src = e.target.result;
-            img.className = 'img-thumbnail';
-            colDiv.appendChild(img);
-            previewContainer.appendChild(colDiv);
-          };
-          reader.readAsDataURL(file);
-        });
-      }
+      submitButton.disabled = true;
+      processingStatus.show();
+
+      fetch('/', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => {
+        if (!response.ok) throw new Error('Upload failed');
+        return response.text();
+      })
+      .then(html => {
+        document.open();
+        document.write(html);
+        document.close();
+      })
+      .catch(error => {
+        alert(error.message);
+        submitButton.disabled = false;
+        processingStatus.reset();
+      });
     });
   </script>
 </body>

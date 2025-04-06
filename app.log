@@ -1,0 +1,764 @@
+2025-04-06 11:45:11,445 - INFO - [__main__] - Starting Image Cropper Application...
+2025-04-06 11:45:11,467 - WARNING - [werkzeug] -  * Debugger is active!
+2025-04-06 11:45:11,473 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2025-04-06 11:45:33,573 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:45:33] "GET / HTTP/1.1" 200 -
+2025-04-06 11:45:50,150 - INFO - [__main__] - ====== New Image Processing Request ======
+2025-04-06 11:45:50,151 - INFO - [__main__] - ====== New Image Processing Request ======
+2025-04-06 11:45:50,151 - INFO - [__main__] - Request received at: 2025-04-06 11:45:50.151852
+2025-04-06 11:45:50,151 - INFO - [__main__] - Request received at: 2025-04-06 11:45:50.151971
+2025-04-06 11:45:50,980 - INFO - [__main__] - Number of files: 71
+2025-04-06 11:45:50,981 - INFO - [__main__] - Number of files: 71
+2025-04-06 11:45:50,993 - ERROR - [__main__] - Error deleting processed/_DSC3982.jpeg: [Errno 2] No such file or directory: 'processed/_DSC3982.jpeg'
+2025-04-06 11:45:50,993 - INFO - [__main__] - Parameters: width=1000, height=1000, format=JPEG, mode=Cover
+2025-04-06 11:45:50,993 - ERROR - [__main__] - Error deleting processed/_DSC4142.jpeg: [Errno 2] No such file or directory: 'processed/_DSC4142.jpeg'
+2025-04-06 11:45:50,993 - INFO - [__main__] - Processing file: _DSC3966.jpg
+2025-04-06 11:45:50,994 - INFO - [__main__] - Parameters: width=1000, height=1000, format=JPEG, mode=Cover
+2025-04-06 11:45:50,994 - INFO - [__main__] - Processing file: _DSC3966.jpg
+2025-04-06 11:45:51,313 - INFO - [__main__] - Successfully processed: _DSC3966.jpeg
+2025-04-06 11:45:51,313 - INFO - [__main__] - Successfully processed: _DSC3966.jpeg
+2025-04-06 11:45:51,313 - INFO - [__main__] - Processing file: _DSC3969.jpg
+2025-04-06 11:45:51,313 - INFO - [__main__] - Processing file: _DSC3969.jpg
+2025-04-06 11:45:51,559 - INFO - [__main__] - Successfully processed: _DSC3969.jpeg
+2025-04-06 11:45:51,559 - INFO - [__main__] - Processing file: _DSC3977.jpg
+2025-04-06 11:45:51,559 - INFO - [__main__] - Successfully processed: _DSC3969.jpeg
+2025-04-06 11:45:51,560 - INFO - [__main__] - Processing file: _DSC3977.jpg
+2025-04-06 11:45:51,818 - INFO - [__main__] - Successfully processed: _DSC3977.jpeg
+2025-04-06 11:45:51,818 - INFO - [__main__] - Processing file: _DSC3980.jpg
+2025-04-06 11:45:51,824 - INFO - [__main__] - Successfully processed: _DSC3977.jpeg
+2025-04-06 11:45:51,824 - INFO - [__main__] - Processing file: _DSC3980.jpg
+2025-04-06 11:45:52,105 - INFO - [__main__] - Successfully processed: _DSC3980.jpeg
+2025-04-06 11:45:52,105 - INFO - [__main__] - Processing file: _DSC3982.jpg
+2025-04-06 11:45:52,110 - INFO - [__main__] - Successfully processed: _DSC3980.jpeg
+2025-04-06 11:45:52,110 - INFO - [__main__] - Processing file: _DSC3982.jpg
+2025-04-06 11:45:52,365 - INFO - [__main__] - Successfully processed: _DSC3982.jpeg
+2025-04-06 11:45:52,366 - INFO - [__main__] - Processing file: _DSC3984.jpg
+2025-04-06 11:45:52,370 - INFO - [__main__] - Successfully processed: _DSC3982.jpeg
+2025-04-06 11:45:52,370 - INFO - [__main__] - Processing file: _DSC3984.jpg
+2025-04-06 11:45:52,611 - INFO - [__main__] - Successfully processed: _DSC3984.jpeg
+2025-04-06 11:45:52,611 - INFO - [__main__] - Processing file: _DSC3987.jpg
+2025-04-06 11:45:52,616 - INFO - [__main__] - Successfully processed: _DSC3984.jpeg
+2025-04-06 11:45:52,616 - INFO - [__main__] - Processing file: _DSC3987.jpg
+2025-04-06 11:45:52,872 - INFO - [__main__] - Successfully processed: _DSC3987.jpeg
+2025-04-06 11:45:52,872 - INFO - [__main__] - Processing file: _DSC3988.jpg
+2025-04-06 11:45:52,873 - INFO - [__main__] - Successfully processed: _DSC3987.jpeg
+2025-04-06 11:45:52,873 - INFO - [__main__] - Processing file: _DSC3988.jpg
+2025-04-06 11:45:53,143 - INFO - [__main__] - Successfully processed: _DSC3988.jpeg
+2025-04-06 11:45:53,143 - INFO - [__main__] - Processing file: _DSC3989.jpg
+2025-04-06 11:45:53,143 - INFO - [__main__] - Successfully processed: _DSC3988.jpeg
+2025-04-06 11:45:53,143 - INFO - [__main__] - Processing file: _DSC3989.jpg
+2025-04-06 11:45:53,428 - INFO - [__main__] - Successfully processed: _DSC3989.jpeg
+2025-04-06 11:45:53,428 - INFO - [__main__] - Processing file: _DSC3992.jpg
+2025-04-06 11:45:53,428 - INFO - [__main__] - Successfully processed: _DSC3989.jpeg
+2025-04-06 11:45:53,428 - INFO - [__main__] - Processing file: _DSC3992.jpg
+2025-04-06 11:45:53,701 - INFO - [__main__] - Successfully processed: _DSC3992.jpeg
+2025-04-06 11:45:53,701 - INFO - [__main__] - Processing file: _DSC3993.jpg
+2025-04-06 11:45:53,702 - INFO - [__main__] - Successfully processed: _DSC3992.jpeg
+2025-04-06 11:45:53,702 - INFO - [__main__] - Processing file: _DSC3993.jpg
+2025-04-06 11:45:53,972 - INFO - [__main__] - Successfully processed: _DSC3993.jpeg
+2025-04-06 11:45:53,972 - INFO - [__main__] - Processing file: _DSC3994.jpg
+2025-04-06 11:45:53,972 - INFO - [__main__] - Successfully processed: _DSC3993.jpeg
+2025-04-06 11:45:53,972 - INFO - [__main__] - Processing file: _DSC3994.jpg
+2025-04-06 11:45:54,229 - INFO - [__main__] - Successfully processed: _DSC3994.jpeg
+2025-04-06 11:45:54,229 - INFO - [__main__] - Processing file: _DSC3997.jpg
+2025-04-06 11:45:54,231 - INFO - [__main__] - Successfully processed: _DSC3994.jpeg
+2025-04-06 11:45:54,231 - INFO - [__main__] - Processing file: _DSC3997.jpg
+2025-04-06 11:45:54,483 - INFO - [__main__] - Successfully processed: _DSC3997.jpeg
+2025-04-06 11:45:54,483 - INFO - [__main__] - Processing file: _DSC4004.jpg
+2025-04-06 11:45:54,483 - INFO - [__main__] - Successfully processed: _DSC3997.jpeg
+2025-04-06 11:45:54,483 - INFO - [__main__] - Processing file: _DSC4004.jpg
+2025-04-06 11:45:54,721 - INFO - [__main__] - Successfully processed: _DSC4004.jpeg
+2025-04-06 11:45:54,721 - INFO - [__main__] - Processing file: _DSC4006.jpg
+2025-04-06 11:45:54,722 - INFO - [__main__] - Successfully processed: _DSC4004.jpeg
+2025-04-06 11:45:54,722 - INFO - [__main__] - Processing file: _DSC4006.jpg
+2025-04-06 11:45:54,950 - INFO - [__main__] - Successfully processed: _DSC4006.jpeg
+2025-04-06 11:45:54,950 - INFO - [__main__] - Successfully processed: _DSC4006.jpeg
+2025-04-06 11:45:54,950 - INFO - [__main__] - Processing file: _DSC4008.jpg
+2025-04-06 11:45:54,950 - INFO - [__main__] - Processing file: _DSC4008.jpg
+2025-04-06 11:45:55,210 - INFO - [__main__] - Successfully processed: _DSC4008.jpeg
+2025-04-06 11:45:55,210 - INFO - [__main__] - Successfully processed: _DSC4008.jpeg
+2025-04-06 11:45:55,210 - INFO - [__main__] - Processing file: _DSC4015.jpg
+2025-04-06 11:45:55,210 - INFO - [__main__] - Processing file: _DSC4015.jpg
+2025-04-06 11:45:55,471 - INFO - [__main__] - Successfully processed: _DSC4015.jpeg
+2025-04-06 11:45:55,471 - INFO - [__main__] - Processing file: _DSC4017.jpg
+2025-04-06 11:45:55,471 - INFO - [__main__] - Successfully processed: _DSC4015.jpeg
+2025-04-06 11:45:55,471 - INFO - [__main__] - Processing file: _DSC4017.jpg
+2025-04-06 11:45:55,723 - INFO - [__main__] - Successfully processed: _DSC4017.jpeg
+2025-04-06 11:45:55,724 - INFO - [__main__] - Processing file: _DSC4020.jpg
+2025-04-06 11:45:55,724 - INFO - [__main__] - Successfully processed: _DSC4017.jpeg
+2025-04-06 11:45:55,724 - INFO - [__main__] - Processing file: _DSC4020.jpg
+2025-04-06 11:45:56,037 - INFO - [__main__] - Successfully processed: _DSC4020.jpeg
+2025-04-06 11:45:56,037 - INFO - [__main__] - Processing file: _DSC4025.jpg
+2025-04-06 11:45:56,044 - INFO - [__main__] - Successfully processed: _DSC4020.jpeg
+2025-04-06 11:45:56,044 - INFO - [__main__] - Processing file: _DSC4025.jpg
+2025-04-06 11:45:56,356 - INFO - [__main__] - Successfully processed: _DSC4025.jpeg
+2025-04-06 11:45:56,356 - INFO - [__main__] - Processing file: _DSC4030.jpg
+2025-04-06 11:45:56,362 - INFO - [__main__] - Successfully processed: _DSC4025.jpeg
+2025-04-06 11:45:56,362 - INFO - [__main__] - Processing file: _DSC4030.jpg
+2025-04-06 11:45:56,668 - INFO - [__main__] - Successfully processed: _DSC4030.jpeg
+2025-04-06 11:45:56,668 - INFO - [__main__] - Successfully processed: _DSC4030.jpeg
+2025-04-06 11:45:56,668 - INFO - [__main__] - Processing file: _DSC4035.jpg
+2025-04-06 11:45:56,668 - INFO - [__main__] - Processing file: _DSC4035.jpg
+2025-04-06 11:45:56,981 - INFO - [__main__] - Successfully processed: _DSC4035.jpeg
+2025-04-06 11:45:56,981 - INFO - [__main__] - Processing file: _DSC4047.jpg
+2025-04-06 11:45:56,982 - INFO - [__main__] - Successfully processed: _DSC4035.jpeg
+2025-04-06 11:45:56,982 - INFO - [__main__] - Processing file: _DSC4047.jpg
+2025-04-06 11:45:57,217 - INFO - [__main__] - Successfully processed: _DSC4047.jpeg
+2025-04-06 11:45:57,217 - INFO - [__main__] - Successfully processed: _DSC4047.jpeg
+2025-04-06 11:45:57,217 - INFO - [__main__] - Processing file: _DSC4051.jpg
+2025-04-06 11:45:57,217 - INFO - [__main__] - Processing file: _DSC4051.jpg
+2025-04-06 11:45:57,439 - INFO - [__main__] - Successfully processed: _DSC4051.jpeg
+2025-04-06 11:45:57,439 - INFO - [__main__] - Processing file: _DSC4054.jpg
+2025-04-06 11:45:57,439 - INFO - [__main__] - Successfully processed: _DSC4051.jpeg
+2025-04-06 11:45:57,439 - INFO - [__main__] - Processing file: _DSC4054.jpg
+2025-04-06 11:45:57,755 - INFO - [__main__] - Successfully processed: _DSC4054.jpeg
+2025-04-06 11:45:57,755 - INFO - [__main__] - Processing file: _DSC4056.jpg
+2025-04-06 11:45:57,760 - INFO - [__main__] - Successfully processed: _DSC4054.jpeg
+2025-04-06 11:45:57,760 - INFO - [__main__] - Processing file: _DSC4056.jpg
+2025-04-06 11:45:57,964 - INFO - [__main__] - Successfully processed: _DSC4056.jpeg
+2025-04-06 11:45:57,964 - INFO - [__main__] - Processing file: _DSC4062.jpg
+2025-04-06 11:45:57,969 - INFO - [__main__] - Successfully processed: _DSC4056.jpeg
+2025-04-06 11:45:57,969 - INFO - [__main__] - Processing file: _DSC4062.jpg
+2025-04-06 11:45:58,234 - INFO - [__main__] - Successfully processed: _DSC4062.jpeg
+2025-04-06 11:45:58,234 - INFO - [__main__] - Processing file: _DSC4064.jpg
+2025-04-06 11:45:58,240 - INFO - [__main__] - Successfully processed: _DSC4062.jpeg
+2025-04-06 11:45:58,240 - INFO - [__main__] - Processing file: _DSC4064.jpg
+2025-04-06 11:45:58,489 - INFO - [__main__] - Successfully processed: _DSC4064.jpeg
+2025-04-06 11:45:58,489 - INFO - [__main__] - Processing file: _DSC4067.jpg
+2025-04-06 11:45:58,490 - INFO - [__main__] - Successfully processed: _DSC4064.jpeg
+2025-04-06 11:45:58,490 - INFO - [__main__] - Processing file: _DSC4067.jpg
+2025-04-06 11:45:58,817 - INFO - [__main__] - Successfully processed: _DSC4067.jpeg
+2025-04-06 11:45:58,818 - INFO - [__main__] - Processing file: _DSC4071.jpg
+2025-04-06 11:45:58,822 - INFO - [__main__] - Successfully processed: _DSC4067.jpeg
+2025-04-06 11:45:58,822 - INFO - [__main__] - Processing file: _DSC4071.jpg
+2025-04-06 11:45:59,073 - INFO - [__main__] - Successfully processed: _DSC4071.jpeg
+2025-04-06 11:45:59,073 - INFO - [__main__] - Processing file: _DSC4073.jpg
+2025-04-06 11:45:59,074 - INFO - [__main__] - Successfully processed: _DSC4071.jpeg
+2025-04-06 11:45:59,074 - INFO - [__main__] - Processing file: _DSC4073.jpg
+2025-04-06 11:45:59,401 - INFO - [__main__] - Successfully processed: _DSC4073.jpeg
+2025-04-06 11:45:59,401 - INFO - [__main__] - Processing file: _DSC4076.jpg
+2025-04-06 11:45:59,406 - INFO - [__main__] - Successfully processed: _DSC4073.jpeg
+2025-04-06 11:45:59,406 - INFO - [__main__] - Processing file: _DSC4076.jpg
+2025-04-06 11:45:59,646 - INFO - [__main__] - Successfully processed: _DSC4076.jpeg
+2025-04-06 11:45:59,646 - INFO - [__main__] - Processing file: _DSC4078.jpg
+2025-04-06 11:45:59,646 - INFO - [__main__] - Successfully processed: _DSC4076.jpeg
+2025-04-06 11:45:59,646 - INFO - [__main__] - Processing file: _DSC4078.jpg
+2025-04-06 11:45:59,902 - INFO - [__main__] - Successfully processed: _DSC4078.jpeg
+2025-04-06 11:45:59,902 - INFO - [__main__] - Processing file: _DSC4082.jpg
+2025-04-06 11:45:59,908 - INFO - [__main__] - Successfully processed: _DSC4078.jpeg
+2025-04-06 11:45:59,908 - INFO - [__main__] - Processing file: _DSC4082.jpg
+2025-04-06 11:46:00,122 - INFO - [__main__] - Successfully processed: _DSC4082.jpeg
+2025-04-06 11:46:00,122 - INFO - [__main__] - Processing file: _DSC4088.jpg
+2025-04-06 11:46:00,124 - INFO - [__main__] - Successfully processed: _DSC4082.jpeg
+2025-04-06 11:46:00,124 - INFO - [__main__] - Processing file: _DSC4088.jpg
+2025-04-06 11:46:00,343 - INFO - [__main__] - Successfully processed: _DSC4088.jpeg
+2025-04-06 11:46:00,343 - INFO - [__main__] - Processing file: _DSC4089.jpg
+2025-04-06 11:46:00,343 - INFO - [__main__] - Successfully processed: _DSC4088.jpeg
+2025-04-06 11:46:00,343 - INFO - [__main__] - Processing file: _DSC4089.jpg
+2025-04-06 11:46:00,614 - INFO - [__main__] - Successfully processed: _DSC4089.jpeg
+2025-04-06 11:46:00,614 - INFO - [__main__] - Successfully processed: _DSC4089.jpeg
+2025-04-06 11:46:00,614 - INFO - [__main__] - Processing file: _DSC4099.jpg
+2025-04-06 11:46:00,614 - INFO - [__main__] - Processing file: _DSC4099.jpg
+2025-04-06 11:46:00,813 - INFO - [__main__] - Successfully processed: _DSC4099.jpeg
+2025-04-06 11:46:00,813 - INFO - [__main__] - Processing file: _DSC4103.jpg
+2025-04-06 11:46:00,813 - INFO - [__main__] - Successfully processed: _DSC4099.jpeg
+2025-04-06 11:46:00,813 - INFO - [__main__] - Processing file: _DSC4103.jpg
+2025-04-06 11:46:01,043 - INFO - [__main__] - Successfully processed: _DSC4103.jpeg
+2025-04-06 11:46:01,043 - INFO - [__main__] - Successfully processed: _DSC4103.jpeg
+2025-04-06 11:46:01,044 - INFO - [__main__] - Processing file: _DSC4109.jpg
+2025-04-06 11:46:01,044 - INFO - [__main__] - Processing file: _DSC4109.jpg
+2025-04-06 11:46:01,258 - INFO - [__main__] - Successfully processed: _DSC4109.jpeg
+2025-04-06 11:46:01,258 - INFO - [__main__] - Processing file: _DSC4123.jpg
+2025-04-06 11:46:01,258 - INFO - [__main__] - Successfully processed: _DSC4109.jpeg
+2025-04-06 11:46:01,258 - INFO - [__main__] - Processing file: _DSC4123.jpg
+2025-04-06 11:46:01,518 - INFO - [__main__] - Successfully processed: _DSC4123.jpeg
+2025-04-06 11:46:01,518 - INFO - [__main__] - Successfully processed: _DSC4123.jpeg
+2025-04-06 11:46:01,518 - INFO - [__main__] - Processing file: _DSC4130.jpg
+2025-04-06 11:46:01,518 - INFO - [__main__] - Processing file: _DSC4130.jpg
+2025-04-06 11:46:01,693 - INFO - [__main__] - Successfully processed: _DSC4130.jpeg
+2025-04-06 11:46:01,693 - INFO - [__main__] - Processing file: _DSC4132.jpg
+2025-04-06 11:46:01,694 - INFO - [__main__] - Successfully processed: _DSC4130.jpeg
+2025-04-06 11:46:01,694 - INFO - [__main__] - Processing file: _DSC4132.jpg
+2025-04-06 11:46:01,860 - INFO - [__main__] - Successfully processed: _DSC4132.jpeg
+2025-04-06 11:46:01,860 - INFO - [__main__] - Processing file: _DSC4136.jpg
+2025-04-06 11:46:01,860 - INFO - [__main__] - Successfully processed: _DSC4132.jpeg
+2025-04-06 11:46:01,860 - INFO - [__main__] - Processing file: _DSC4136.jpg
+2025-04-06 11:46:02,048 - INFO - [__main__] - Successfully processed: _DSC4136.jpeg
+2025-04-06 11:46:02,048 - INFO - [__main__] - Processing file: _DSC4142.jpg
+2025-04-06 11:46:02,048 - INFO - [__main__] - Successfully processed: _DSC4136.jpeg
+2025-04-06 11:46:02,048 - INFO - [__main__] - Processing file: _DSC4142.jpg
+2025-04-06 11:46:02,255 - INFO - [__main__] - Successfully processed: _DSC4142.jpeg
+2025-04-06 11:46:02,255 - INFO - [__main__] - Processing file: _DSC4146.jpg
+2025-04-06 11:46:02,256 - INFO - [__main__] - Successfully processed: _DSC4142.jpeg
+2025-04-06 11:46:02,256 - INFO - [__main__] - Processing file: _DSC4146.jpg
+2025-04-06 11:46:02,440 - INFO - [__main__] - Successfully processed: _DSC4146.jpeg
+2025-04-06 11:46:02,440 - INFO - [__main__] - Processing file: _DSC4152.jpg
+2025-04-06 11:46:02,441 - INFO - [__main__] - Successfully processed: _DSC4146.jpeg
+2025-04-06 11:46:02,441 - INFO - [__main__] - Processing file: _DSC4152.jpg
+2025-04-06 11:46:02,630 - INFO - [__main__] - Successfully processed: _DSC4152.jpeg
+2025-04-06 11:46:02,630 - INFO - [__main__] - Processing file: _DSC4162.jpg
+2025-04-06 11:46:02,632 - INFO - [__main__] - Successfully processed: _DSC4152.jpeg
+2025-04-06 11:46:02,632 - INFO - [__main__] - Processing file: _DSC4162.jpg
+2025-04-06 11:46:02,802 - INFO - [__main__] - Successfully processed: _DSC4162.jpeg
+2025-04-06 11:46:02,802 - INFO - [__main__] - Processing file: _DSC4166.jpg
+2025-04-06 11:46:02,802 - INFO - [__main__] - Successfully processed: _DSC4162.jpeg
+2025-04-06 11:46:02,802 - INFO - [__main__] - Processing file: _DSC4166.jpg
+2025-04-06 11:46:03,117 - INFO - [__main__] - Successfully processed: _DSC4166.jpeg
+2025-04-06 11:46:03,118 - INFO - [__main__] - Processing file: _DSC4167.jpg
+2025-04-06 11:46:03,118 - INFO - [__main__] - Successfully processed: _DSC4166.jpeg
+2025-04-06 11:46:03,118 - INFO - [__main__] - Processing file: _DSC4167.jpg
+2025-04-06 11:46:03,341 - INFO - [__main__] - Successfully processed: _DSC4167.jpeg
+2025-04-06 11:46:03,342 - INFO - [__main__] - Successfully processed: _DSC4167.jpeg
+2025-04-06 11:46:03,345 - INFO - [__main__] - Processing file: _DSC4169.jpg
+2025-04-06 11:46:03,345 - INFO - [__main__] - Processing file: _DSC4169.jpg
+2025-04-06 11:46:03,574 - INFO - [__main__] - Successfully processed: _DSC4169.jpeg
+2025-04-06 11:46:03,574 - INFO - [__main__] - Successfully processed: _DSC4169.jpeg
+2025-04-06 11:46:03,574 - INFO - [__main__] - Processing file: _DSC4171.jpg
+2025-04-06 11:46:03,574 - INFO - [__main__] - Processing file: _DSC4171.jpg
+2025-04-06 11:46:03,805 - INFO - [__main__] - Successfully processed: _DSC4171.jpeg
+2025-04-06 11:46:03,805 - INFO - [__main__] - Successfully processed: _DSC4171.jpeg
+2025-04-06 11:46:03,805 - INFO - [__main__] - Processing file: _DSC4185.jpg
+2025-04-06 11:46:03,805 - INFO - [__main__] - Processing file: _DSC4185.jpg
+2025-04-06 11:46:04,017 - INFO - [__main__] - Successfully processed: _DSC4185.jpeg
+2025-04-06 11:46:04,017 - INFO - [__main__] - Successfully processed: _DSC4185.jpeg
+2025-04-06 11:46:04,017 - INFO - [__main__] - Processing file: _DSC4187.jpg
+2025-04-06 11:46:04,017 - INFO - [__main__] - Processing file: _DSC4187.jpg
+2025-04-06 11:46:04,380 - INFO - [__main__] - Successfully processed: _DSC4187.jpeg
+2025-04-06 11:46:04,381 - INFO - [__main__] - Processing file: _DSC4188.jpg
+2025-04-06 11:46:04,381 - INFO - [__main__] - Successfully processed: _DSC4187.jpeg
+2025-04-06 11:46:04,381 - INFO - [__main__] - Processing file: _DSC4188.jpg
+2025-04-06 11:46:04,516 - INFO - [__main__] - Successfully processed: _DSC4188.jpeg
+2025-04-06 11:46:04,516 - INFO - [__main__] - Processing file: _DSC4191.jpg
+2025-04-06 11:46:04,517 - INFO - [__main__] - Successfully processed: _DSC4188.jpeg
+2025-04-06 11:46:04,517 - INFO - [__main__] - Processing file: _DSC4191.jpg
+2025-04-06 11:46:04,752 - INFO - [__main__] - Successfully processed: _DSC4191.jpeg
+2025-04-06 11:46:04,752 - INFO - [__main__] - Processing file: _DSC4192.jpg
+2025-04-06 11:46:04,753 - INFO - [__main__] - Successfully processed: _DSC4191.jpeg
+2025-04-06 11:46:04,753 - INFO - [__main__] - Processing file: _DSC4192.jpg
+2025-04-06 11:46:04,989 - INFO - [__main__] - Successfully processed: _DSC4192.jpeg
+2025-04-06 11:46:04,989 - INFO - [__main__] - Processing file: _DSC4204.jpg
+2025-04-06 11:46:04,989 - INFO - [__main__] - Successfully processed: _DSC4192.jpeg
+2025-04-06 11:46:04,990 - INFO - [__main__] - Processing file: _DSC4204.jpg
+2025-04-06 11:46:05,203 - INFO - [__main__] - Successfully processed: _DSC4204.jpeg
+2025-04-06 11:46:05,203 - INFO - [__main__] - Processing file: _DSC4205.jpg
+2025-04-06 11:46:05,204 - INFO - [__main__] - Successfully processed: _DSC4204.jpeg
+2025-04-06 11:46:05,204 - INFO - [__main__] - Processing file: _DSC4205.jpg
+2025-04-06 11:46:05,420 - INFO - [__main__] - Successfully processed: _DSC4205.jpeg
+2025-04-06 11:46:05,420 - INFO - [__main__] - Processing file: _DSC4209.jpg
+2025-04-06 11:46:05,420 - INFO - [__main__] - Successfully processed: _DSC4205.jpeg
+2025-04-06 11:46:05,420 - INFO - [__main__] - Processing file: _DSC4209.jpg
+2025-04-06 11:46:05,642 - INFO - [__main__] - Successfully processed: _DSC4209.jpeg
+2025-04-06 11:46:05,642 - INFO - [__main__] - Processing file: _DSC4211.jpg
+2025-04-06 11:46:05,642 - INFO - [__main__] - Successfully processed: _DSC4209.jpeg
+2025-04-06 11:46:05,642 - INFO - [__main__] - Processing file: _DSC4211.jpg
+2025-04-06 11:46:05,907 - INFO - [__main__] - Successfully processed: _DSC4211.jpeg
+2025-04-06 11:46:05,907 - INFO - [__main__] - Processing file: _DSC4217.jpg
+2025-04-06 11:46:05,907 - INFO - [__main__] - Successfully processed: _DSC4211.jpeg
+2025-04-06 11:46:05,907 - INFO - [__main__] - Processing file: _DSC4217.jpg
+2025-04-06 11:46:06,199 - INFO - [__main__] - Successfully processed: _DSC4217.jpeg
+2025-04-06 11:46:06,199 - INFO - [__main__] - Processing file: _DSC4219.jpg
+2025-04-06 11:46:06,199 - INFO - [__main__] - Successfully processed: _DSC4217.jpeg
+2025-04-06 11:46:06,199 - INFO - [__main__] - Processing file: _DSC4219.jpg
+2025-04-06 11:46:06,426 - INFO - [__main__] - Successfully processed: _DSC4219.jpeg
+2025-04-06 11:46:06,426 - INFO - [__main__] - Processing file: _DSC4220.jpg
+2025-04-06 11:46:06,426 - INFO - [__main__] - Successfully processed: _DSC4219.jpeg
+2025-04-06 11:46:06,426 - INFO - [__main__] - Processing file: _DSC4220.jpg
+2025-04-06 11:46:06,643 - INFO - [__main__] - Successfully processed: _DSC4220.jpeg
+2025-04-06 11:46:06,643 - INFO - [__main__] - Processing file: _DSC4222.jpg
+2025-04-06 11:46:06,643 - INFO - [__main__] - Successfully processed: _DSC4220.jpeg
+2025-04-06 11:46:06,643 - INFO - [__main__] - Processing file: _DSC4222.jpg
+2025-04-06 11:46:06,960 - INFO - [__main__] - Successfully processed: _DSC4222.jpeg
+2025-04-06 11:46:06,960 - INFO - [__main__] - Processing file: _DSC4238.jpg
+2025-04-06 11:46:06,960 - INFO - [__main__] - Successfully processed: _DSC4222.jpeg
+2025-04-06 11:46:06,960 - INFO - [__main__] - Processing file: _DSC4238.jpg
+2025-04-06 11:46:07,190 - INFO - [__main__] - Successfully processed: _DSC4238.jpeg
+2025-04-06 11:46:07,190 - INFO - [__main__] - Processing file: _DSC4256.jpg
+2025-04-06 11:46:07,191 - INFO - [__main__] - Successfully processed: _DSC4238.jpeg
+2025-04-06 11:46:07,191 - INFO - [__main__] - Processing file: _DSC4256.jpg
+2025-04-06 11:46:07,484 - INFO - [__main__] - Successfully processed: _DSC4256.jpeg
+2025-04-06 11:46:07,484 - INFO - [__main__] - Processing file: _DSC4257.jpg
+2025-04-06 11:46:07,489 - INFO - [__main__] - Successfully processed: _DSC4256.jpeg
+2025-04-06 11:46:07,489 - INFO - [__main__] - Processing file: _DSC4257.jpg
+2025-04-06 11:46:07,722 - INFO - [__main__] - Successfully processed: _DSC4257.jpeg
+2025-04-06 11:46:07,722 - INFO - [__main__] - Processing file: _DSC4262.jpg
+2025-04-06 11:46:07,726 - INFO - [__main__] - Successfully processed: _DSC4257.jpeg
+2025-04-06 11:46:07,726 - INFO - [__main__] - Processing file: _DSC4262.jpg
+2025-04-06 11:46:07,948 - INFO - [__main__] - Successfully processed: _DSC4262.jpeg
+2025-04-06 11:46:07,948 - INFO - [__main__] - Processing file: _DSC4263.jpg
+2025-04-06 11:46:07,948 - INFO - [__main__] - Successfully processed: _DSC4262.jpeg
+2025-04-06 11:46:07,948 - INFO - [__main__] - Processing file: _DSC4263.jpg
+2025-04-06 11:46:08,177 - INFO - [__main__] - Successfully processed: _DSC4263.jpeg
+2025-04-06 11:46:08,177 - INFO - [__main__] - Processing file: _DSC4265.jpg
+2025-04-06 11:46:08,178 - INFO - [__main__] - Successfully processed: _DSC4263.jpeg
+2025-04-06 11:46:08,178 - INFO - [__main__] - Processing file: _DSC4265.jpg
+2025-04-06 11:46:08,403 - INFO - [__main__] - Successfully processed: _DSC4265.jpeg
+2025-04-06 11:46:08,403 - INFO - [__main__] - Successfully processed: _DSC4265.jpeg
+2025-04-06 11:46:08,403 - INFO - [__main__] - Processing file: _DSC4266.jpg
+2025-04-06 11:46:08,404 - INFO - [__main__] - Processing file: _DSC4266.jpg
+2025-04-06 11:46:08,627 - INFO - [__main__] - Successfully processed: _DSC4266.jpeg
+2025-04-06 11:46:08,628 - INFO - [__main__] - ====== Request Processing Completed ======
+
+2025-04-06 11:46:08,628 - INFO - [__main__] - Successfully processed: _DSC4266.jpeg
+2025-04-06 11:46:08,628 - INFO - [__main__] - ====== Request Processing Completed ======
+
+2025-04-06 11:46:08,649 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "POST / HTTP/1.1" 200 -
+2025-04-06 11:46:08,649 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "POST / HTTP/1.1" 200 -
+2025-04-06 11:46:08,679 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC3977.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,680 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC3969.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,680 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC3966.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,685 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC3980.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,686 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC3984.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,687 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC3982.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,689 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC3987.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,690 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC3988.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,690 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC3989.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,691 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC3992.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,693 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC3993.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,693 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC3994.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,694 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC3997.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,696 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4004.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,697 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4006.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,698 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4008.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,699 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4017.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,699 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4015.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,701 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4020.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,702 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4030.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,703 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4025.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,703 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4035.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,707 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4047.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,708 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4054.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,708 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4051.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,711 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4056.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,712 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4062.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,712 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4064.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,714 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4067.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,715 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4071.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,715 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4073.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,716 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4076.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,718 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4078.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,719 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4082.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,719 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4088.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,722 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4089.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,722 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4099.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,723 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4103.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,725 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4109.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,725 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4123.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,726 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4130.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,727 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4132.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,728 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4136.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,728 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4142.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,728 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4146.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,731 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4152.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,732 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4162.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,732 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4166.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,736 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4167.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,736 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4169.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,737 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4171.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,741 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4185.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,742 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4187.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,743 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4188.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,745 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4191.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,746 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4192.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,754 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4204.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,754 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4205.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,755 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4209.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,758 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4211.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,758 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4217.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,760 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4219.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,761 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4220.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,762 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4222.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,763 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4238.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,763 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4256.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,764 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4257.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,766 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4263.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,767 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4265.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,768 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4262.jpeg HTTP/1.1" 200 -
+2025-04-06 11:46:08,769 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 11:46:08] "GET /download/_DSC4266.jpeg HTTP/1.1" 200 -
+2025-04-06 12:04:27,667 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:04:27] "GET /download_all HTTP/1.1" 200 -
+2025-04-06 12:21:11,354 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2025-04-06 12:21:11,537 - INFO - [__main__] - Starting Image Cropper Application...
+2025-04-06 12:21:11,559 - WARNING - [werkzeug] -  * Debugger is active!
+2025-04-06 12:21:11,568 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2025-04-06 12:21:12,581 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2025-04-06 12:21:12,703 - INFO - [__main__] - Starting Image Cropper Application...
+2025-04-06 12:21:12,718 - WARNING - [werkzeug] -  * Debugger is active!
+2025-04-06 12:21:12,722 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2025-04-06 12:23:42,090 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:23:42] "GET / HTTP/1.1" 200 -
+2025-04-06 12:23:42,438 - ERROR - [__main__] - Page not found: http://localhost:3002/favicon.ico
+2025-04-06 12:23:42,440 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:23:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-06 12:24:03,161 - INFO - [__main__] - ====== New Image Processing Request ======
+2025-04-06 12:24:03,162 - INFO - [__main__] - ====== New Image Processing Request ======
+2025-04-06 12:24:03,162 - INFO - [__main__] - Request received at: 2025-04-06 12:24:03.162634
+2025-04-06 12:24:03,162 - INFO - [__main__] - Request received at: 2025-04-06 12:24:03.162837
+2025-04-06 12:24:04,141 - INFO - [__main__] - Number of files: 71
+2025-04-06 12:24:04,142 - INFO - [__main__] - Number of files: 71
+2025-04-06 12:24:04,149 - ERROR - [__main__] - Error deleting processed/_DSC4185.jpeg: [Errno 2] No such file or directory: 'processed/_DSC4185.jpeg'
+2025-04-06 12:24:04,152 - INFO - [__main__] - Processing file: _DSC3966.jpg
+2025-04-06 12:24:04,152 - INFO - [__main__] - Processing file: _DSC3966.jpg
+2025-04-06 12:24:05,063 - INFO - [__main__] - Successfully processed: _DSC3966.png
+2025-04-06 12:24:05,063 - INFO - [__main__] - Processing file: _DSC3969.jpg
+2025-04-06 12:24:05,063 - INFO - [__main__] - Successfully processed: _DSC3966.png
+2025-04-06 12:24:05,063 - INFO - [__main__] - Processing file: _DSC3969.jpg
+2025-04-06 12:24:05,871 - INFO - [__main__] - Successfully processed: _DSC3969.png
+2025-04-06 12:24:05,871 - INFO - [__main__] - Processing file: _DSC3977.jpg
+2025-04-06 12:24:05,883 - INFO - [__main__] - Successfully processed: _DSC3969.png
+2025-04-06 12:24:05,883 - INFO - [__main__] - Processing file: _DSC3977.jpg
+2025-04-06 12:24:06,696 - INFO - [__main__] - Successfully processed: _DSC3977.png
+2025-04-06 12:24:06,696 - INFO - [__main__] - Processing file: _DSC3980.jpg
+2025-04-06 12:24:06,705 - INFO - [__main__] - Successfully processed: _DSC3977.png
+2025-04-06 12:24:06,705 - INFO - [__main__] - Processing file: _DSC3980.jpg
+2025-04-06 12:24:07,538 - INFO - [__main__] - Successfully processed: _DSC3980.png
+2025-04-06 12:24:07,538 - INFO - [__main__] - Processing file: _DSC3982.jpg
+2025-04-06 12:24:07,544 - INFO - [__main__] - Successfully processed: _DSC3980.png
+2025-04-06 12:24:07,544 - INFO - [__main__] - Processing file: _DSC3982.jpg
+2025-04-06 12:24:08,369 - INFO - [__main__] - Successfully processed: _DSC3982.png
+2025-04-06 12:24:08,369 - INFO - [__main__] - Processing file: _DSC3984.jpg
+2025-04-06 12:24:08,369 - INFO - [__main__] - Successfully processed: _DSC3982.png
+2025-04-06 12:24:08,369 - INFO - [__main__] - Processing file: _DSC3984.jpg
+2025-04-06 12:24:09,184 - INFO - [__main__] - Successfully processed: _DSC3984.png
+2025-04-06 12:24:09,184 - INFO - [__main__] - Processing file: _DSC3987.jpg
+2025-04-06 12:24:09,184 - INFO - [__main__] - Successfully processed: _DSC3984.png
+2025-04-06 12:24:09,184 - INFO - [__main__] - Processing file: _DSC3987.jpg
+2025-04-06 12:24:10,010 - INFO - [__main__] - Successfully processed: _DSC3987.png
+2025-04-06 12:24:10,010 - INFO - [__main__] - Successfully processed: _DSC3987.png
+2025-04-06 12:24:10,010 - INFO - [__main__] - Processing file: _DSC3988.jpg
+2025-04-06 12:24:10,010 - INFO - [__main__] - Processing file: _DSC3988.jpg
+2025-04-06 12:24:10,857 - INFO - [__main__] - Successfully processed: _DSC3988.png
+2025-04-06 12:24:10,857 - INFO - [__main__] - Processing file: _DSC3989.jpg
+2025-04-06 12:24:10,858 - INFO - [__main__] - Successfully processed: _DSC3988.png
+2025-04-06 12:24:10,858 - INFO - [__main__] - Processing file: _DSC3989.jpg
+2025-04-06 12:24:11,703 - INFO - [__main__] - Successfully processed: _DSC3989.png
+2025-04-06 12:24:11,703 - INFO - [__main__] - Processing file: _DSC3992.jpg
+2025-04-06 12:24:11,708 - INFO - [__main__] - Successfully processed: _DSC3989.png
+2025-04-06 12:24:11,708 - INFO - [__main__] - Processing file: _DSC3992.jpg
+2025-04-06 12:24:12,608 - INFO - [__main__] - Successfully processed: _DSC3992.png
+2025-04-06 12:24:12,609 - INFO - [__main__] - Processing file: _DSC3993.jpg
+2025-04-06 12:24:12,615 - INFO - [__main__] - Successfully processed: _DSC3992.png
+2025-04-06 12:24:12,615 - INFO - [__main__] - Processing file: _DSC3993.jpg
+2025-04-06 12:24:13,453 - INFO - [__main__] - Successfully processed: _DSC3993.png
+2025-04-06 12:24:13,453 - INFO - [__main__] - Processing file: _DSC3994.jpg
+2025-04-06 12:24:13,458 - INFO - [__main__] - Successfully processed: _DSC3993.png
+2025-04-06 12:24:13,459 - INFO - [__main__] - Processing file: _DSC3994.jpg
+2025-04-06 12:24:14,275 - INFO - [__main__] - Successfully processed: _DSC3994.png
+2025-04-06 12:24:14,275 - INFO - [__main__] - Processing file: _DSC3997.jpg
+2025-04-06 12:24:14,276 - INFO - [__main__] - Successfully processed: _DSC3994.png
+2025-04-06 12:24:14,276 - INFO - [__main__] - Processing file: _DSC3997.jpg
+2025-04-06 12:24:15,162 - INFO - [__main__] - Successfully processed: _DSC3997.png
+2025-04-06 12:24:15,162 - INFO - [__main__] - Processing file: _DSC4004.jpg
+2025-04-06 12:24:15,168 - INFO - [__main__] - Successfully processed: _DSC3997.png
+2025-04-06 12:24:15,168 - INFO - [__main__] - Processing file: _DSC4004.jpg
+2025-04-06 12:24:15,976 - INFO - [__main__] - Successfully processed: _DSC4004.png
+2025-04-06 12:24:15,976 - INFO - [__main__] - Processing file: _DSC4006.jpg
+2025-04-06 12:24:15,977 - INFO - [__main__] - Successfully processed: _DSC4004.png
+2025-04-06 12:24:15,977 - INFO - [__main__] - Processing file: _DSC4006.jpg
+2025-04-06 12:24:16,775 - INFO - [__main__] - Successfully processed: _DSC4006.png
+2025-04-06 12:24:16,775 - INFO - [__main__] - Processing file: _DSC4008.jpg
+2025-04-06 12:24:16,775 - INFO - [__main__] - Successfully processed: _DSC4006.png
+2025-04-06 12:24:16,776 - INFO - [__main__] - Processing file: _DSC4008.jpg
+2025-04-06 12:24:17,603 - INFO - [__main__] - Successfully processed: _DSC4008.png
+2025-04-06 12:24:17,603 - INFO - [__main__] - Successfully processed: _DSC4008.png
+2025-04-06 12:24:17,603 - INFO - [__main__] - Processing file: _DSC4015.jpg
+2025-04-06 12:24:17,604 - INFO - [__main__] - Processing file: _DSC4015.jpg
+2025-04-06 12:24:18,421 - INFO - [__main__] - Successfully processed: _DSC4015.png
+2025-04-06 12:24:18,421 - INFO - [__main__] - Processing file: _DSC4017.jpg
+2025-04-06 12:24:18,427 - INFO - [__main__] - Successfully processed: _DSC4015.png
+2025-04-06 12:24:18,427 - INFO - [__main__] - Processing file: _DSC4017.jpg
+2025-04-06 12:24:19,241 - INFO - [__main__] - Successfully processed: _DSC4017.png
+2025-04-06 12:24:19,241 - INFO - [__main__] - Processing file: _DSC4020.jpg
+2025-04-06 12:24:19,242 - INFO - [__main__] - Successfully processed: _DSC4017.png
+2025-04-06 12:24:19,242 - INFO - [__main__] - Processing file: _DSC4020.jpg
+2025-04-06 12:24:20,118 - INFO - [__main__] - Successfully processed: _DSC4020.png
+2025-04-06 12:24:20,118 - INFO - [__main__] - Processing file: _DSC4025.jpg
+2025-04-06 12:24:20,118 - INFO - [__main__] - Successfully processed: _DSC4020.png
+2025-04-06 12:24:20,119 - INFO - [__main__] - Processing file: _DSC4025.jpg
+2025-04-06 12:24:20,976 - INFO - [__main__] - Successfully processed: _DSC4025.png
+2025-04-06 12:24:20,976 - INFO - [__main__] - Processing file: _DSC4030.jpg
+2025-04-06 12:24:20,976 - INFO - [__main__] - Successfully processed: _DSC4025.png
+2025-04-06 12:24:20,976 - INFO - [__main__] - Processing file: _DSC4030.jpg
+2025-04-06 12:24:21,843 - INFO - [__main__] - Successfully processed: _DSC4030.png
+2025-04-06 12:24:21,843 - INFO - [__main__] - Processing file: _DSC4035.jpg
+2025-04-06 12:24:21,844 - INFO - [__main__] - Successfully processed: _DSC4030.png
+2025-04-06 12:24:21,844 - INFO - [__main__] - Processing file: _DSC4035.jpg
+2025-04-06 12:24:22,709 - INFO - [__main__] - Successfully processed: _DSC4035.png
+2025-04-06 12:24:22,709 - INFO - [__main__] - Processing file: _DSC4047.jpg
+2025-04-06 12:24:22,709 - INFO - [__main__] - Successfully processed: _DSC4035.png
+2025-04-06 12:24:22,709 - INFO - [__main__] - Processing file: _DSC4047.jpg
+2025-04-06 12:24:23,501 - INFO - [__main__] - Successfully processed: _DSC4047.png
+2025-04-06 12:24:23,501 - INFO - [__main__] - Processing file: _DSC4051.jpg
+2025-04-06 12:24:23,505 - INFO - [__main__] - Successfully processed: _DSC4047.png
+2025-04-06 12:24:23,505 - INFO - [__main__] - Processing file: _DSC4051.jpg
+2025-04-06 12:24:24,277 - INFO - [__main__] - Successfully processed: _DSC4051.png
+2025-04-06 12:24:24,277 - INFO - [__main__] - Processing file: _DSC4054.jpg
+2025-04-06 12:24:24,277 - INFO - [__main__] - Successfully processed: _DSC4051.png
+2025-04-06 12:24:24,277 - INFO - [__main__] - Processing file: _DSC4054.jpg
+2025-04-06 12:24:25,144 - INFO - [__main__] - Successfully processed: _DSC4054.png
+2025-04-06 12:24:25,144 - INFO - [__main__] - Processing file: _DSC4056.jpg
+2025-04-06 12:24:25,144 - INFO - [__main__] - Successfully processed: _DSC4054.png
+2025-04-06 12:24:25,144 - INFO - [__main__] - Processing file: _DSC4056.jpg
+2025-04-06 12:24:25,782 - INFO - [__main__] - Successfully processed: _DSC4056.png
+2025-04-06 12:24:25,782 - INFO - [__main__] - Processing file: _DSC4062.jpg
+2025-04-06 12:24:25,788 - INFO - [__main__] - Successfully processed: _DSC4056.png
+2025-04-06 12:24:25,788 - INFO - [__main__] - Processing file: _DSC4062.jpg
+2025-04-06 12:24:26,676 - INFO - [__main__] - Successfully processed: _DSC4062.png
+2025-04-06 12:24:26,676 - INFO - [__main__] - Processing file: _DSC4064.jpg
+2025-04-06 12:24:26,677 - INFO - [__main__] - Successfully processed: _DSC4062.png
+2025-04-06 12:24:26,677 - INFO - [__main__] - Processing file: _DSC4064.jpg
+2025-04-06 12:24:27,468 - INFO - [__main__] - Successfully processed: _DSC4064.png
+2025-04-06 12:24:27,468 - INFO - [__main__] - Processing file: _DSC4067.jpg
+2025-04-06 12:24:27,474 - INFO - [__main__] - Successfully processed: _DSC4064.png
+2025-04-06 12:24:27,474 - INFO - [__main__] - Processing file: _DSC4067.jpg
+2025-04-06 12:24:28,225 - INFO - [__main__] - Successfully processed: _DSC4067.png
+2025-04-06 12:24:28,225 - INFO - [__main__] - Processing file: _DSC4071.jpg
+2025-04-06 12:24:28,226 - INFO - [__main__] - Successfully processed: _DSC4067.png
+2025-04-06 12:24:28,226 - INFO - [__main__] - Processing file: _DSC4071.jpg
+2025-04-06 12:24:29,039 - INFO - [__main__] - Successfully processed: _DSC4071.png
+2025-04-06 12:24:29,039 - INFO - [__main__] - Processing file: _DSC4073.jpg
+2025-04-06 12:24:29,040 - INFO - [__main__] - Successfully processed: _DSC4071.png
+2025-04-06 12:24:29,040 - INFO - [__main__] - Processing file: _DSC4073.jpg
+2025-04-06 12:24:29,804 - INFO - [__main__] - Successfully processed: _DSC4073.png
+2025-04-06 12:24:29,804 - INFO - [__main__] - Processing file: _DSC4076.jpg
+2025-04-06 12:24:29,809 - INFO - [__main__] - Successfully processed: _DSC4073.png
+2025-04-06 12:24:29,809 - INFO - [__main__] - Processing file: _DSC4076.jpg
+2025-04-06 12:24:30,602 - INFO - [__main__] - Successfully processed: _DSC4076.png
+2025-04-06 12:24:30,602 - INFO - [__main__] - Processing file: _DSC4078.jpg
+2025-04-06 12:24:30,602 - INFO - [__main__] - Successfully processed: _DSC4076.png
+2025-04-06 12:24:30,602 - INFO - [__main__] - Processing file: _DSC4078.jpg
+2025-04-06 12:24:31,445 - INFO - [__main__] - Successfully processed: _DSC4078.png
+2025-04-06 12:24:31,445 - INFO - [__main__] - Processing file: _DSC4082.jpg
+2025-04-06 12:24:31,445 - INFO - [__main__] - Successfully processed: _DSC4078.png
+2025-04-06 12:24:31,445 - INFO - [__main__] - Processing file: _DSC4082.jpg
+2025-04-06 12:24:32,242 - INFO - [__main__] - Successfully processed: _DSC4082.png
+2025-04-06 12:24:32,242 - INFO - [__main__] - Processing file: _DSC4088.jpg
+2025-04-06 12:24:32,243 - INFO - [__main__] - Successfully processed: _DSC4082.png
+2025-04-06 12:24:32,243 - INFO - [__main__] - Processing file: _DSC4088.jpg
+2025-04-06 12:24:32,988 - INFO - [__main__] - Successfully processed: _DSC4088.png
+2025-04-06 12:24:32,988 - INFO - [__main__] - Processing file: _DSC4089.jpg
+2025-04-06 12:24:32,988 - INFO - [__main__] - Successfully processed: _DSC4088.png
+2025-04-06 12:24:32,988 - INFO - [__main__] - Processing file: _DSC4089.jpg
+2025-04-06 12:24:33,591 - INFO - [__main__] - Successfully processed: _DSC4089.png
+2025-04-06 12:24:33,591 - INFO - [__main__] - Processing file: _DSC4099.jpg
+2025-04-06 12:24:33,591 - INFO - [__main__] - Successfully processed: _DSC4089.png
+2025-04-06 12:24:33,592 - INFO - [__main__] - Processing file: _DSC4099.jpg
+2025-04-06 12:24:34,356 - INFO - [__main__] - Successfully processed: _DSC4099.png
+2025-04-06 12:24:34,356 - INFO - [__main__] - Processing file: _DSC4103.jpg
+2025-04-06 12:24:34,361 - INFO - [__main__] - Successfully processed: _DSC4099.png
+2025-04-06 12:24:34,361 - INFO - [__main__] - Processing file: _DSC4103.jpg
+2025-04-06 12:24:35,116 - INFO - [__main__] - Successfully processed: _DSC4103.png
+2025-04-06 12:24:35,116 - INFO - [__main__] - Processing file: _DSC4109.jpg
+2025-04-06 12:24:35,121 - INFO - [__main__] - Successfully processed: _DSC4103.png
+2025-04-06 12:24:35,121 - INFO - [__main__] - Processing file: _DSC4109.jpg
+2025-04-06 12:24:35,885 - INFO - [__main__] - Successfully processed: _DSC4109.png
+2025-04-06 12:24:35,885 - INFO - [__main__] - Processing file: _DSC4123.jpg
+2025-04-06 12:24:35,892 - INFO - [__main__] - Successfully processed: _DSC4109.png
+2025-04-06 12:24:35,892 - INFO - [__main__] - Processing file: _DSC4123.jpg
+2025-04-06 12:24:36,718 - INFO - [__main__] - Successfully processed: _DSC4123.png
+2025-04-06 12:24:36,718 - INFO - [__main__] - Processing file: _DSC4130.jpg
+2025-04-06 12:24:36,725 - INFO - [__main__] - Successfully processed: _DSC4123.png
+2025-04-06 12:24:36,725 - INFO - [__main__] - Processing file: _DSC4130.jpg
+2025-04-06 12:24:37,444 - INFO - [__main__] - Successfully processed: _DSC4130.png
+2025-04-06 12:24:37,444 - INFO - [__main__] - Processing file: _DSC4132.jpg
+2025-04-06 12:24:37,451 - INFO - [__main__] - Successfully processed: _DSC4130.png
+2025-04-06 12:24:37,451 - INFO - [__main__] - Processing file: _DSC4132.jpg
+2025-04-06 12:24:38,160 - INFO - [__main__] - Successfully processed: _DSC4132.png
+2025-04-06 12:24:38,160 - INFO - [__main__] - Processing file: _DSC4136.jpg
+2025-04-06 12:24:38,164 - INFO - [__main__] - Successfully processed: _DSC4132.png
+2025-04-06 12:24:38,164 - INFO - [__main__] - Processing file: _DSC4136.jpg
+2025-04-06 12:24:38,897 - INFO - [__main__] - Successfully processed: _DSC4136.png
+2025-04-06 12:24:38,897 - INFO - [__main__] - Processing file: _DSC4142.jpg
+2025-04-06 12:24:38,901 - INFO - [__main__] - Successfully processed: _DSC4136.png
+2025-04-06 12:24:38,901 - INFO - [__main__] - Processing file: _DSC4142.jpg
+2025-04-06 12:24:39,672 - INFO - [__main__] - Successfully processed: _DSC4142.png
+2025-04-06 12:24:39,672 - INFO - [__main__] - Processing file: _DSC4146.jpg
+2025-04-06 12:24:39,672 - INFO - [__main__] - Successfully processed: _DSC4142.png
+2025-04-06 12:24:39,672 - INFO - [__main__] - Processing file: _DSC4146.jpg
+2025-04-06 12:24:40,404 - INFO - [__main__] - Successfully processed: _DSC4146.png
+2025-04-06 12:24:40,404 - INFO - [__main__] - Processing file: _DSC4152.jpg
+2025-04-06 12:24:40,404 - INFO - [__main__] - Successfully processed: _DSC4146.png
+2025-04-06 12:24:40,404 - INFO - [__main__] - Processing file: _DSC4152.jpg
+2025-04-06 12:24:41,128 - INFO - [__main__] - Successfully processed: _DSC4152.png
+2025-04-06 12:24:41,129 - INFO - [__main__] - Processing file: _DSC4162.jpg
+2025-04-06 12:24:41,129 - INFO - [__main__] - Successfully processed: _DSC4152.png
+2025-04-06 12:24:41,129 - INFO - [__main__] - Processing file: _DSC4162.jpg
+2025-04-06 12:24:41,855 - INFO - [__main__] - Successfully processed: _DSC4162.png
+2025-04-06 12:24:41,855 - INFO - [__main__] - Processing file: _DSC4166.jpg
+2025-04-06 12:24:41,861 - INFO - [__main__] - Successfully processed: _DSC4162.png
+2025-04-06 12:24:41,861 - INFO - [__main__] - Processing file: _DSC4166.jpg
+2025-04-06 12:24:42,710 - INFO - [__main__] - Successfully processed: _DSC4166.png
+2025-04-06 12:24:42,710 - INFO - [__main__] - Processing file: _DSC4167.jpg
+2025-04-06 12:24:42,711 - INFO - [__main__] - Successfully processed: _DSC4166.png
+2025-04-06 12:24:42,711 - INFO - [__main__] - Processing file: _DSC4167.jpg
+2025-04-06 12:24:43,476 - INFO - [__main__] - Successfully processed: _DSC4167.png
+2025-04-06 12:24:43,476 - INFO - [__main__] - Processing file: _DSC4169.jpg
+2025-04-06 12:24:43,476 - INFO - [__main__] - Successfully processed: _DSC4167.png
+2025-04-06 12:24:43,476 - INFO - [__main__] - Processing file: _DSC4169.jpg
+2025-04-06 12:24:44,243 - INFO - [__main__] - Successfully processed: _DSC4169.png
+2025-04-06 12:24:44,243 - INFO - [__main__] - Processing file: _DSC4171.jpg
+2025-04-06 12:24:44,247 - INFO - [__main__] - Successfully processed: _DSC4169.png
+2025-04-06 12:24:44,247 - INFO - [__main__] - Processing file: _DSC4171.jpg
+2025-04-06 12:24:45,010 - INFO - [__main__] - Successfully processed: _DSC4171.png
+2025-04-06 12:24:45,010 - INFO - [__main__] - Processing file: _DSC4185.jpg
+2025-04-06 12:24:45,037 - INFO - [__main__] - Successfully processed: _DSC4171.png
+2025-04-06 12:24:45,038 - INFO - [__main__] - Processing file: _DSC4185.jpg
+2025-04-06 12:24:45,790 - INFO - [__main__] - Successfully processed: _DSC4185.png
+2025-04-06 12:24:45,790 - INFO - [__main__] - Processing file: _DSC4187.jpg
+2025-04-06 12:24:45,816 - INFO - [__main__] - Successfully processed: _DSC4185.png
+2025-04-06 12:24:45,816 - INFO - [__main__] - Processing file: _DSC4187.jpg
+2025-04-06 12:24:46,622 - INFO - [__main__] - Successfully processed: _DSC4187.png
+2025-04-06 12:24:46,622 - INFO - [__main__] - Processing file: _DSC4188.jpg
+2025-04-06 12:24:46,641 - INFO - [__main__] - Successfully processed: _DSC4187.png
+2025-04-06 12:24:46,641 - INFO - [__main__] - Processing file: _DSC4188.jpg
+2025-04-06 12:24:47,119 - INFO - [__main__] - Successfully processed: _DSC4188.png
+2025-04-06 12:24:47,119 - INFO - [__main__] - Processing file: _DSC4191.jpg
+2025-04-06 12:24:47,135 - INFO - [__main__] - Successfully processed: _DSC4188.png
+2025-04-06 12:24:47,135 - INFO - [__main__] - Processing file: _DSC4191.jpg
+2025-04-06 12:24:47,911 - INFO - [__main__] - Successfully processed: _DSC4191.png
+2025-04-06 12:24:47,911 - INFO - [__main__] - Processing file: _DSC4192.jpg
+2025-04-06 12:24:47,927 - INFO - [__main__] - Successfully processed: _DSC4191.png
+2025-04-06 12:24:47,927 - INFO - [__main__] - Processing file: _DSC4192.jpg
+2025-04-06 12:24:48,593 - INFO - [__main__] - Successfully processed: _DSC4192.png
+2025-04-06 12:24:48,593 - INFO - [__main__] - Processing file: _DSC4204.jpg
+2025-04-06 12:24:48,605 - INFO - [__main__] - Successfully processed: _DSC4192.png
+2025-04-06 12:24:48,605 - INFO - [__main__] - Processing file: _DSC4204.jpg
+2025-04-06 12:24:49,350 - INFO - [__main__] - Successfully processed: _DSC4204.png
+2025-04-06 12:24:49,350 - INFO - [__main__] - Processing file: _DSC4205.jpg
+2025-04-06 12:24:49,361 - INFO - [__main__] - Successfully processed: _DSC4204.png
+2025-04-06 12:24:49,361 - INFO - [__main__] - Processing file: _DSC4205.jpg
+2025-04-06 12:24:50,127 - INFO - [__main__] - Successfully processed: _DSC4205.png
+2025-04-06 12:24:50,127 - INFO - [__main__] - Processing file: _DSC4209.jpg
+2025-04-06 12:24:50,135 - INFO - [__main__] - Successfully processed: _DSC4205.png
+2025-04-06 12:24:50,135 - INFO - [__main__] - Processing file: _DSC4209.jpg
+2025-04-06 12:24:50,781 - INFO - [__main__] - Successfully processed: _DSC4209.png
+2025-04-06 12:24:50,781 - INFO - [__main__] - Processing file: _DSC4211.jpg
+2025-04-06 12:24:50,788 - INFO - [__main__] - Successfully processed: _DSC4209.png
+2025-04-06 12:24:50,788 - INFO - [__main__] - Processing file: _DSC4211.jpg
+2025-04-06 12:24:51,615 - INFO - [__main__] - Successfully processed: _DSC4211.png
+2025-04-06 12:24:51,615 - INFO - [__main__] - Processing file: _DSC4217.jpg
+2025-04-06 12:24:51,647 - INFO - [__main__] - Successfully processed: _DSC4211.png
+2025-04-06 12:24:51,647 - INFO - [__main__] - Processing file: _DSC4217.jpg
+2025-04-06 12:24:52,288 - INFO - [__main__] - Successfully processed: _DSC4217.png
+2025-04-06 12:24:52,288 - INFO - [__main__] - Processing file: _DSC4219.jpg
+2025-04-06 12:24:52,316 - INFO - [__main__] - Successfully processed: _DSC4217.png
+2025-04-06 12:24:52,316 - INFO - [__main__] - Processing file: _DSC4219.jpg
+2025-04-06 12:24:53,176 - INFO - [__main__] - Successfully processed: _DSC4219.png
+2025-04-06 12:24:53,176 - INFO - [__main__] - Processing file: _DSC4220.jpg
+2025-04-06 12:24:53,220 - INFO - [__main__] - Successfully processed: _DSC4219.png
+2025-04-06 12:24:53,220 - INFO - [__main__] - Processing file: _DSC4220.jpg
+2025-04-06 12:24:53,992 - INFO - [__main__] - Successfully processed: _DSC4220.png
+2025-04-06 12:24:53,992 - INFO - [__main__] - Processing file: _DSC4222.jpg
+2025-04-06 12:24:54,029 - INFO - [__main__] - Successfully processed: _DSC4220.png
+2025-04-06 12:24:54,030 - INFO - [__main__] - Processing file: _DSC4222.jpg
+2025-04-06 12:24:54,826 - INFO - [__main__] - Successfully processed: _DSC4222.png
+2025-04-06 12:24:54,826 - INFO - [__main__] - Processing file: _DSC4238.jpg
+2025-04-06 12:24:54,859 - INFO - [__main__] - Successfully processed: _DSC4222.png
+2025-04-06 12:24:54,859 - INFO - [__main__] - Processing file: _DSC4238.jpg
+2025-04-06 12:24:55,631 - INFO - [__main__] - Successfully processed: _DSC4238.png
+2025-04-06 12:24:55,631 - INFO - [__main__] - Processing file: _DSC4256.jpg
+2025-04-06 12:24:55,661 - INFO - [__main__] - Successfully processed: _DSC4238.png
+2025-04-06 12:24:55,661 - INFO - [__main__] - Processing file: _DSC4256.jpg
+2025-04-06 12:24:56,475 - INFO - [__main__] - Successfully processed: _DSC4256.png
+2025-04-06 12:24:56,475 - INFO - [__main__] - Processing file: _DSC4257.jpg
+2025-04-06 12:24:56,501 - INFO - [__main__] - Successfully processed: _DSC4256.png
+2025-04-06 12:24:56,501 - INFO - [__main__] - Processing file: _DSC4257.jpg
+2025-04-06 12:24:57,285 - INFO - [__main__] - Successfully processed: _DSC4257.png
+2025-04-06 12:24:57,285 - INFO - [__main__] - Processing file: _DSC4262.jpg
+2025-04-06 12:24:57,307 - INFO - [__main__] - Successfully processed: _DSC4257.png
+2025-04-06 12:24:57,307 - INFO - [__main__] - Processing file: _DSC4262.jpg
+2025-04-06 12:24:58,081 - INFO - [__main__] - Successfully processed: _DSC4262.png
+2025-04-06 12:24:58,081 - INFO - [__main__] - Processing file: _DSC4263.jpg
+2025-04-06 12:24:58,100 - INFO - [__main__] - Successfully processed: _DSC4262.png
+2025-04-06 12:24:58,100 - INFO - [__main__] - Processing file: _DSC4263.jpg
+2025-04-06 12:24:58,880 - INFO - [__main__] - Successfully processed: _DSC4263.png
+2025-04-06 12:24:58,880 - INFO - [__main__] - Processing file: _DSC4265.jpg
+2025-04-06 12:24:58,895 - INFO - [__main__] - Successfully processed: _DSC4263.png
+2025-04-06 12:24:58,895 - INFO - [__main__] - Processing file: _DSC4265.jpg
+2025-04-06 12:24:59,667 - INFO - [__main__] - Successfully processed: _DSC4265.png
+2025-04-06 12:24:59,667 - INFO - [__main__] - Processing file: _DSC4266.jpg
+2025-04-06 12:24:59,677 - INFO - [__main__] - Successfully processed: _DSC4265.png
+2025-04-06 12:24:59,677 - INFO - [__main__] - Processing file: _DSC4266.jpg
+2025-04-06 12:25:00,461 - INFO - [__main__] - Successfully processed: _DSC4266.png
+2025-04-06 12:25:00,461 - INFO - [__main__] - ====== Request Processing Completed ======
+
+2025-04-06 12:25:00,467 - INFO - [__main__] - Successfully processed: _DSC4266.png
+2025-04-06 12:25:00,467 - INFO - [__main__] - ====== Request Processing Completed ======
+
+2025-04-06 12:25:00,480 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "POST / HTTP/1.1" 200 -
+2025-04-06 12:25:00,482 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "POST / HTTP/1.1" 200 -
+2025-04-06 12:25:00,497 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC3966.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,498 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC3969.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,502 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC3977.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,526 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC3980.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,527 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC3982.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,527 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC3984.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,548 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC3989.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,549 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC3987.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,549 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC3988.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,599 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC3992.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,600 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC3993.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,600 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC3994.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,621 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC3997.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,621 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4004.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,625 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4006.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,639 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4015.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,639 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4008.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,649 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4017.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,661 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4020.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,662 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4030.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,662 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4025.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,685 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4035.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,692 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4047.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,694 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4051.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,701 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4054.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,724 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4056.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,726 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4062.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,726 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4064.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,744 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4067.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,745 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4071.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,746 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4073.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,764 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4076.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,765 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4078.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,765 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4082.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,792 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4088.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,800 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4089.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,800 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4099.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,814 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4123.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,814 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4103.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,814 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4109.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,831 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4130.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,831 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4132.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,831 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4136.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,846 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4142.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,850 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4146.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,851 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4152.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,863 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4162.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,866 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4166.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,868 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4167.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,877 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4169.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,878 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4171.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,879 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4185.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,894 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4187.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,899 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4188.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,900 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4191.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,920 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4192.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,921 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4204.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,921 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4205.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,989 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4209.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,989 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4211.png HTTP/1.1" 200 -
+2025-04-06 12:25:00,990 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:00] "GET /download/_DSC4217.png HTTP/1.1" 200 -
+2025-04-06 12:25:01,013 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:01] "GET /download/_DSC4219.png HTTP/1.1" 200 -
+2025-04-06 12:25:01,014 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:01] "GET /download/_DSC4220.png HTTP/1.1" 200 -
+2025-04-06 12:25:01,021 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:01] "GET /download/_DSC4222.png HTTP/1.1" 200 -
+2025-04-06 12:25:01,023 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:01] "GET /download/_DSC4238.png HTTP/1.1" 200 -
+2025-04-06 12:25:01,024 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:01] "GET /download/_DSC4256.png HTTP/1.1" 200 -
+2025-04-06 12:25:01,048 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:01] "GET /download/_DSC4257.png HTTP/1.1" 200 -
+2025-04-06 12:25:01,048 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:01] "GET /download/_DSC4262.png HTTP/1.1" 200 -
+2025-04-06 12:25:01,049 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:01] "GET /download/_DSC4263.png HTTP/1.1" 200 -
+2025-04-06 12:25:01,061 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:01] "GET /download/_DSC4265.png HTTP/1.1" 200 -
+2025-04-06 12:25:01,062 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:25:01] "GET /download/_DSC4266.png HTTP/1.1" 200 -
+2025-04-06 12:30:26,408 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:30:26] "GET / HTTP/1.1" 200 -
+2025-04-06 12:30:26,427 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:30:26] "GET /static/js/imagePreview.js HTTP/1.1" 200 -
+2025-04-06 12:30:26,428 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:30:26] "GET /static/js/processStatus.js HTTP/1.1" 200 -
+2025-04-06 12:31:19,765 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:31:19] "GET / HTTP/1.1" 200 -
+2025-04-06 12:31:19,790 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:31:19] "[36mGET /static/js/processStatus.js HTTP/1.1[0m" 304 -
+2025-04-06 12:31:19,790 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:31:19] "[36mGET /static/js/imagePreview.js HTTP/1.1[0m" 304 -
+2025-04-06 12:32:01,193 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:32:01] "GET / HTTP/1.1" 200 -
+2025-04-06 12:32:01,210 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:32:01] "[36mGET /static/js/imagePreview.js HTTP/1.1[0m" 304 -
+2025-04-06 12:32:01,211 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:32:01] "[36mGET /static/js/processStatus.js HTTP/1.1[0m" 304 -
