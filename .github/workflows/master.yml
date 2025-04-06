@@ -3,14 +3,17 @@ name: FTP Deploy
 on:
   push:
     branches:
+      - main
       - master
   workflow_dispatch:
 
 jobs:
-  deploy:
+  web-deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Get latest code
+        uses: actions/checkout@v4
 
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -21,13 +24,4 @@ jobs:
           password: ${{ secrets.FTP_PASS }}
           local-dir: ./
           server-dir: ./
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            **/.env*
-            **/*.zip
-            **/vendor/**
-            README.md
-            .gitignore
-            .github/**
+          dangerous-clean-slate: false
