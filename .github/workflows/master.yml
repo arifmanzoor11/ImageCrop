@@ -1,11 +1,7 @@
-name: Deploy to Shared Hosting
+name: FTP Deploy
 
 on:
   push:
-    branches:
-      - main
-      - master
-  pull_request:
     branches:
       - main
       - master
@@ -15,28 +11,24 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Server DNS Lookup
-        id: dns_lookup
-        run: |
-          echo "Attempting to resolve hostname..."
-          if host ${{ secrets.FTP_SERVER }}; then
-            echo "Hostname resolved successfully"
-          else
-            echo "Failed to resolve hostname. Check FTP_SERVER secret value"
-            exit 1
-          fi
-
-      - name: Deploy via SFTP
-        if: success()
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          username: ${{ secrets.FTP_USERNAME }}
-          server: ${{ secrets.FTP_SERVER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local_path: './*'
-          remote_path: './'
-          sftp_only: true
-          exclude: '.git*,.github*,node_modules*,.env*,*.zip,vendor*,README.md'
+          server: aquashineexteriors.co.uk
+          username: git_user@imageresizer.waveink.co.uk
+          port: 21
+          password: ${{ secrets.FTP_PASS }}
+          local-dir: ./
+          server-dir: ./
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.env*
+            **/*.zip
+            **/vendor/**
+            README.md
+            .gitignore
+            .github/**
