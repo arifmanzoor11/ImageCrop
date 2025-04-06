@@ -3,7 +3,7 @@ name: Deploy Python App to Shared Hosting
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
