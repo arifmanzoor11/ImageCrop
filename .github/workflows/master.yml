@@ -22,6 +22,7 @@ jobs:
           username: git_user@imageresizer.waveink.co.uk
           port: 21
           password: ${{ secrets.FTP_PASS }}
+          
           local-dir: ./
           server-dir: ./
           dangerous-clean-slate: false
