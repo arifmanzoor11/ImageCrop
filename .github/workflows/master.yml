@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
   workflow_dispatch:
 
 jobs:
@@ -13,8 +18,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Optional: Add build steps here if needed
-      
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -22,15 +25,14 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
-          server-dir: ./  # Changed to relative path since FTP already points to subdomain
-          dangerous-clean-slate: false  # Prevents deleting existing files
+          server-dir: ./
+          dangerous-clean-slate: false
           exclude: |
             **/.git*
-            **/.git*/**
+            **/.github/**
             **/node_modules/**
             **/.env*
             **/*.zip
             **/vendor/**
             README.md
             .gitignore
-            .github/**
