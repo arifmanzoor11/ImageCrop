@@ -18,11 +18,12 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
+          protocol: ftps # or ftp
           server: aquashineexteriors.co.uk
           username: git_user@imageresizer.waveink.co.uk
           port: 21
           password: nX~k;v.d5c5e
-
+          passive: true
           local-dir: ./
           server-dir: ./
           dangerous-clean-slate: false
