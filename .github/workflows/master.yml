@@ -18,16 +18,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Verify Server Connection
+      - name: Server DNS Lookup
+        id: dns_lookup
         run: |
-          nc -zv ${{ secrets.FTP_SERVER }} 22 || nc -zv ${{ secrets.FTP_SERVER }} 21
+          echo "Attempting to resolve hostname..."
+          if host ${{ secrets.FTP_SERVER }}; then
+            echo "Hostname resolved successfully"
+          else
+            echo "Failed to resolve hostname. Check FTP_SERVER secret value"
+            exit 1
+          fi
 
       - name: Deploy via SFTP
+        if: success()
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: ${{ secrets.FTP_USERNAME }}
           server: ${{ secrets.FTP_SERVER }}
-          port: 22  # Standard SFTP port
           password: ${{ secrets.FTP_PASSWORD }}
           local_path: './*'
           remote_path: './'
