@@ -1,0 +1,33 @@
+name: FTP Deploy
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: aquashineexteriors.co.uk
+          username: git_user@imageresizer.waveink.co.uk
+          port: 21
+          password: ${{ secrets.FTP_PASS }}
+          local-dir: ./
+          server-dir: ./
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.env*
+            **/*.zip
+            **/vendor/**
+            README.md
+            .gitignore
+            .github/**
