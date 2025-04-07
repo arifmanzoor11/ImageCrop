@@ -1,28 +1,55 @@
-name: FTP Deploy
+name: Deploy to cPanel
 
 on:
   push:
-    branches:
-      - master
-  workflow_dispatch:
+    branches: [ main, master ]
+
+env:
+  NODE_VERSION: '18.x'
+  PYTHON_VERSION: '3.9'
+  DEPLOY_PATH: '/home/aquaskcf/imageresizer'  # Update with your cPanel path
 
 jobs:
   web-deploy:
-    name: Deploy
+    name: 🎉 Deploy to cPanel
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Get latest code
-        uses: actions/checkout@v4
-
-      - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          protocol: ftp # or ftp
-          server: aquashineexteriors.co.uk
-          username: git_user@imageresizer.waveink.co.uk
-          port: 21
-          password: nX~k;v.d5c5e
-          passive: true
-          local-dir: ./
-          server-dir: ./
-          dangerous-clean-slate: false
+    - name: 📚 Get latest code
+      uses: actions/checkout@v3
+    
+    - name: 🐍 Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: 📦 Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install wheel
+    
+    - name: 🔨 Build project
+      run: |
+        python setup.py bdist_wheel
+        
+    - name: 📝 Generate deployment package
+      run: |
+        zip -r deployment.zip . -x "*.git*" "*.github*" "*.env*" "*.vscode*" "*.pytest_cache*" "__pycache__/*"
+    
+    - name: 📂 Deploy to cPanel
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.CPANEL_SERVER }}
+        username: ${{ secrets.CPANEL_USERNAME }}
+        password: ${{ secrets.CPANEL_PASSWORD }}
+        local-dir: ./
+        server-dir: ${{ env.DEPLOY_PATH }}/
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/__pycache__/**
+          **/.pytest_cache/**
+          **/.env*
+          **/tests/**

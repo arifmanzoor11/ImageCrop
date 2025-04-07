@@ -1,0 +1,7 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/username/public_html/
+    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -R .htaccess $DEPLOYPATH
+    - /bin/cp requirements.txt $DEPLOYPATH
+    - /usr/local/bin/pip3.9 install -r $DEPLOYPATH/requirements.txt --user

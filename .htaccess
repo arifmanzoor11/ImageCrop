@@ -1,0 +1,12 @@
+Options +ExecCGI
+AddHandler cgi-script .py
+DirectoryIndex app.py
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ app.py/$1 [L]
+
+<Files app.py>
+    SetHandler wsgi-script
+    Options ExecCGI FollowSymLinks
+</Files>
