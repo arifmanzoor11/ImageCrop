@@ -7,7 +7,7 @@ on:
 env:
   NODE_VERSION: '18.x'
   PYTHON_VERSION: '3.9'
-  DEPLOY_PATH: '/home/aquaskcf/imageresizer'  # Update with your cPanel path
+  DEPLOY_PATH: '/imageresizer'  # Update with your cPanel path
 
 jobs:
   web-deploy:
