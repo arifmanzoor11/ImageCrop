@@ -762,3 +762,102 @@
 2025-04-06 12:32:01,193 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:32:01] "GET / HTTP/1.1" 200 -
 2025-04-06 12:32:01,210 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:32:01] "[36mGET /static/js/imagePreview.js HTTP/1.1[0m" 304 -
 2025-04-06 12:32:01,211 - INFO - [werkzeug] - 127.0.0.1 - - [06/Apr/2025 12:32:01] "[36mGET /static/js/processStatus.js HTTP/1.1[0m" 304 -
+2025-04-07 10:49:11,176 - INFO - [__main__] - Starting Image Cropper Application...
+2025-04-07 10:49:11,319 - INFO - [werkzeug] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3002
+2025-04-07 10:49:11,319 - INFO - [werkzeug] - [33mPress CTRL+C to quit[0m
+2025-04-07 10:49:11,320 - INFO - [werkzeug] -  * Restarting with stat
+2025-04-07 10:49:11,415 - INFO - [__main__] - Starting Image Cropper Application...
+2025-04-07 10:49:11,428 - WARNING - [werkzeug] -  * Debugger is active!
+2025-04-07 10:49:11,438 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2025-04-07 10:49:27,237 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:27] "GET / HTTP/1.1" 200 -
+2025-04-07 10:49:27,291 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:27] "GET /static/js/processStatus.js HTTP/1.1" 200 -
+2025-04-07 10:49:27,291 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:27] "GET /static/js/imagePreview.js HTTP/1.1" 200 -
+2025-04-07 10:49:27,307 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:27] "GET /static/js/imagePreview.js HTTP/1.1" 200 -
+2025-04-07 10:49:27,308 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:27] "GET /static/js/processStatus.js HTTP/1.1" 200 -
+2025-04-07 10:49:34,801 - INFO - [__main__] - ====== New Image Processing Request ======
+2025-04-07 10:49:34,801 - INFO - [__main__] - Request received at: 2025-04-07 10:49:34.801510
+2025-04-07 10:49:34,843 - INFO - [__main__] - Number of files: 4
+2025-04-07 10:49:34,844 - INFO - [__main__] - Processing file: _DSC3966.jpg
+2025-04-07 10:49:35,112 - INFO - [__main__] - Successfully processed: _DSC3966.png
+2025-04-07 10:49:35,112 - INFO - [__main__] - Processing file: _DSC3969.jpg
+2025-04-07 10:49:35,315 - INFO - [__main__] - Successfully processed: _DSC3969.png
+2025-04-07 10:49:35,315 - INFO - [__main__] - Processing file: _DSC3977.jpg
+2025-04-07 10:49:35,527 - INFO - [__main__] - Successfully processed: _DSC3977.png
+2025-04-07 10:49:35,527 - INFO - [__main__] - Processing file: _DSC3980.jpg
+2025-04-07 10:49:35,769 - INFO - [__main__] - Successfully processed: _DSC3980.png
+2025-04-07 10:49:35,769 - INFO - [__main__] - ====== Request Processing Completed ======
+
+2025-04-07 10:49:35,798 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:35] "POST / HTTP/1.1" 200 -
+2025-04-07 10:49:35,809 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:35] "GET /download/_DSC3966.png HTTP/1.1" 200 -
+2025-04-07 10:49:35,809 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:35] "GET /download/_DSC3969.png HTTP/1.1" 200 -
+2025-04-07 10:49:35,809 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:35] "GET /download/_DSC3977.png HTTP/1.1" 200 -
+2025-04-07 10:49:35,810 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:35] "GET /download/_DSC3980.png HTTP/1.1" 200 -
+2025-04-07 10:49:43,289 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:43] "[31m[1mPOST /download_all HTTP/1.1[0m" 405 -
+2025-04-07 10:49:49,516 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:49] "GET / HTTP/1.1" 200 -
+2025-04-07 10:49:49,548 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:49] "[36mGET /static/js/imagePreview.js HTTP/1.1[0m" 304 -
+2025-04-07 10:49:49,550 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:49] "[36mGET /static/js/processStatus.js HTTP/1.1[0m" 304 -
+2025-04-07 10:49:56,530 - INFO - [__main__] - ====== New Image Processing Request ======
+2025-04-07 10:49:56,531 - INFO - [__main__] - Request received at: 2025-04-07 10:49:56.531233
+2025-04-07 10:49:56,574 - INFO - [__main__] - Number of files: 4
+2025-04-07 10:49:56,575 - INFO - [__main__] - Processing file: _DSC3966.jpg
+2025-04-07 10:49:56,821 - INFO - [__main__] - Successfully processed: _DSC3966.png
+2025-04-07 10:49:56,821 - INFO - [__main__] - Processing file: _DSC3969.jpg
+2025-04-07 10:49:57,020 - INFO - [__main__] - Successfully processed: _DSC3969.png
+2025-04-07 10:49:57,020 - INFO - [__main__] - Processing file: _DSC3977.jpg
+2025-04-07 10:49:57,233 - INFO - [__main__] - Successfully processed: _DSC3977.png
+2025-04-07 10:49:57,233 - INFO - [__main__] - Processing file: _DSC3980.jpg
+2025-04-07 10:49:57,473 - INFO - [__main__] - Successfully processed: _DSC3980.png
+2025-04-07 10:49:57,473 - INFO - [__main__] - ====== Request Processing Completed ======
+
+2025-04-07 10:49:57,489 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:57] "POST / HTTP/1.1" 200 -
+2025-04-07 10:49:57,503 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:57] "GET /download/_DSC3966.png HTTP/1.1" 200 -
+2025-04-07 10:49:57,503 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:57] "GET /download/_DSC3969.png HTTP/1.1" 200 -
+2025-04-07 10:49:57,506 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:57] "GET /download/_DSC3980.png HTTP/1.1" 200 -
+2025-04-07 10:49:57,506 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:49:57] "GET /download/_DSC3977.png HTTP/1.1" 200 -
+2025-04-07 10:50:12,315 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:50:12] "[31m[1mPOST /download_all HTTP/1.1[0m" 405 -
+2025-04-07 10:50:36,588 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:50:36] "GET / HTTP/1.1" 200 -
+2025-04-07 10:50:36,609 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:50:36] "GET /static/js/processStatus.js HTTP/1.1" 200 -
+2025-04-07 10:50:36,610 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:50:36] "GET /static/js/imagePreview.js HTTP/1.1" 200 -
+2025-04-07 10:50:36,624 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:50:36] "[36mGET /static/js/processStatus.js HTTP/1.1[0m" 304 -
+2025-04-07 10:53:15,271 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2025-04-07 10:53:15,299 - INFO - [werkzeug] -  * Restarting with stat
+2025-04-07 10:53:15,454 - INFO - [__main__] - Starting Image Cropper Application...
+2025-04-07 10:53:15,474 - WARNING - [werkzeug] -  * Debugger is active!
+2025-04-07 10:53:15,480 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2025-04-07 10:55:00,047 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:55:00] "GET / HTTP/1.1" 200 -
+2025-04-07 10:55:00,078 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:55:00] "GET /static/js/imagePreview.js HTTP/1.1" 200 -
+2025-04-07 10:55:00,080 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:55:00] "GET /static/js/processStatus.js HTTP/1.1" 200 -
+2025-04-07 10:55:06,802 - INFO - [__main__] - ====== New Image Processing Request ======
+2025-04-07 10:55:06,803 - INFO - [__main__] - Request received at: 2025-04-07 10:55:06.803211
+2025-04-07 10:55:06,844 - INFO - [__main__] - Number of files: 3
+2025-04-07 10:55:06,845 - INFO - [__main__] - Processing file: _DSC3966.jpg
+2025-04-07 10:55:07,127 - INFO - [__main__] - Successfully processed: _DSC3966.png
+2025-04-07 10:55:07,127 - INFO - [__main__] - Processing file: _DSC3969.jpg
+2025-04-07 10:55:07,328 - INFO - [__main__] - Successfully processed: _DSC3969.png
+2025-04-07 10:55:07,328 - INFO - [__main__] - Processing file: _DSC3977.jpg
+2025-04-07 10:55:07,545 - INFO - [__main__] - Successfully processed: _DSC3977.png
+2025-04-07 10:55:07,545 - INFO - [__main__] - ====== Request Processing Completed ======
+
+2025-04-07 10:55:07,561 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:55:07] "POST / HTTP/1.1" 200 -
+2025-04-07 10:55:16,706 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:55:16] "GET / HTTP/1.1" 200 -
+2025-04-07 10:55:16,726 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:55:16] "[36mGET /static/js/imagePreview.js HTTP/1.1[0m" 304 -
+2025-04-07 10:55:16,726 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:55:16] "[36mGET /static/js/processStatus.js HTTP/1.1[0m" 304 -
+2025-04-07 10:55:22,128 - INFO - [__main__] - ====== New Image Processing Request ======
+2025-04-07 10:55:22,129 - INFO - [__main__] - Request received at: 2025-04-07 10:55:22.129701
+2025-04-07 10:55:22,172 - INFO - [__main__] - Number of files: 4
+2025-04-07 10:55:22,173 - INFO - [__main__] - Processing file: _DSC3966.jpg
+2025-04-07 10:55:22,416 - INFO - [__main__] - Successfully processed: _DSC3966.png
+2025-04-07 10:55:22,416 - INFO - [__main__] - Processing file: _DSC3969.jpg
+2025-04-07 10:55:22,613 - INFO - [__main__] - Successfully processed: _DSC3969.png
+2025-04-07 10:55:22,613 - INFO - [__main__] - Processing file: _DSC3977.jpg
+2025-04-07 10:55:22,828 - INFO - [__main__] - Successfully processed: _DSC3977.png
+2025-04-07 10:55:22,829 - INFO - [__main__] - Processing file: _DSC3980.jpg
+2025-04-07 10:55:23,068 - INFO - [__main__] - Successfully processed: _DSC3980.png
+2025-04-07 10:55:23,068 - INFO - [__main__] - ====== Request Processing Completed ======
+
+2025-04-07 10:55:23,084 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:55:23] "POST / HTTP/1.1" 200 -
+2025-04-07 10:55:23,104 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:55:23] "GET /download/_DSC3966.png HTTP/1.1" 200 -
+2025-04-07 10:55:23,104 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:55:23] "GET /download/_DSC3969.png HTTP/1.1" 200 -
+2025-04-07 10:55:23,105 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:55:23] "GET /download/_DSC3980.png HTTP/1.1" 200 -
+2025-04-07 10:55:23,106 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:55:23] "GET /download/_DSC3977.png HTTP/1.1" 200 -

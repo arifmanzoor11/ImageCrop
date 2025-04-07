@@ -117,18 +117,37 @@ def download_file(filename):
     """Allows individual processed files to be downloaded."""
     return send_file(os.path.join(PROCESSED_FOLDER, filename), as_attachment=True)
 
-@app.route('/download_all')
+@app.route('/download_all', methods=['GET', 'POST'])
 def download_all():
-    """Creates and provides a ZIP file of all processed images."""
-    zip_filename = os.path.join(PROCESSED_FOLDER, "processed_images.zip")
+    if request.method == 'POST':
+        try:
+            # Create a timestamp for unique zip name
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+            zip_filename = f'processed_images_{timestamp}.zip'
+            zip_path = os.path.join(app.config['UPLOAD_FOLDER'], zip_filename)
 
-    with zipfile.ZipFile(zip_filename, 'w', zipfile.ZIP_DEFLATED, allowZip64=True) as zipf:
-        for filename in os.listdir(PROCESSED_FOLDER):
-            if filename != "processed_images.zip":  # Exclude previous ZIP files
-                file_path = os.path.join(PROCESSED_FOLDER, filename)
-                zipf.write(file_path, filename)
+            # Create ZIP file
+            with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
+                for filename in os.listdir(app.config['UPLOAD_FOLDER']):
+                    if filename.endswith(('.png', '.jpg', '.jpeg', '.gif')):
+                        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+                        zipf.write(file_path, filename)
 
-    return send_file(zip_filename, as_attachment=True)
+            # Send file and delete after sending
+            return send_file(
+                zip_path,
+                as_attachment=True,
+                download_name=zip_filename
+            )
+        except Exception as e:
+            return f"Error creating zip file: {str(e)}", 500
+    
+    # GET request - show download page
+    images = []
+    for filename in os.listdir(app.config['UPLOAD_FOLDER']):
+        if filename.endswith(('.png', '.jpg', '.jpeg', '.gif')):
+            images.append(filename)
+    return render_template('download.html', images=images)
 
 @app.route('/download_zip')
 def download_zip():
