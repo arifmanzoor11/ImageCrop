@@ -14,11 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Set up Python
-        uses: actions/setup-python@v3
-        with:
-          python-version: ${{ env.PYTHON_VERSION }}
-      
       - name: Deploy to cPanel
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -32,21 +27,3 @@ jobs:
             **/__pycache__/**
             **/.env
             **/venv/**
-            
-      - name: Setup Virtual Environment on cPanel
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.CPANEL_SERVER }}
-          username: ${{ secrets.CPANEL_USERNAME }}
-          password: ${{ secrets.CPANEL_PASSWORD }}
-          script: |
-            cd ~/public_html/imageresizer
-            python3.9 -m venv venv
-            source venv/bin/activate
-            pip install --upgrade pip
-            pip install -r requirements.txt
-            chmod 755 ~/public_html/imageresizer
-            chmod 644 ~/public_html/imageresizer/.htaccess
-            chmod 755 ~/public_html/imageresizer/passenger_wsgi.py
-            deactivate
-            

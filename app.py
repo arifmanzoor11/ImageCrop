@@ -59,6 +59,7 @@ def resize_image(image, target_width, target_height, mode):
 
     return image.crop((left, top, right, bottom))
 
+
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
     """Handles file uploads, processes images, and renders the result page."""
