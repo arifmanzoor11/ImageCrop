@@ -15,3 +15,11 @@ ENV/
 
 # OS
 .DS_Store
+processed/
+upload/
+*~.jpg
+*~.png
+*~.jpeg
+*~.gif
+*~.zip
+# Jupyter Notebook

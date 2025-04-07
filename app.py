@@ -1,11 +1,9 @@
 import os
-import uuid
 import zipfile
 import logging
 from datetime import datetime
-from flask import Flask, request, render_template, send_file, jsonify, Response
+from flask import Flask, request, render_template, send_file
 from PIL import Image
-import json
 
 # Configure logging with timestamp and log levels
 logging.basicConfig(
@@ -121,6 +119,19 @@ def download_file(filename):
 
 @app.route('/download_all')
 def download_all():
+    """Creates and provides a ZIP file of all processed images."""
+    zip_filename = os.path.join(PROCESSED_FOLDER, "processed_images.zip")
+
+    with zipfile.ZipFile(zip_filename, 'w', zipfile.ZIP_DEFLATED, allowZip64=True) as zipf:
+        for filename in os.listdir(PROCESSED_FOLDER):
+            if filename != "processed_images.zip":  # Exclude previous ZIP files
+                file_path = os.path.join(PROCESSED_FOLDER, filename)
+                zipf.write(file_path, filename)
+
+    return send_file(zip_filename, as_attachment=True)
+
+@app.route('/download_zip')
+def download_zip():
     """Creates and provides a ZIP file of all processed images."""
     zip_filename = os.path.join(PROCESSED_FOLDER, "processed_images.zip")
 

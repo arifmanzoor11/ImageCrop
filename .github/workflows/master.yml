@@ -3,7 +3,6 @@ name: FTP Deploy
 on:
   push:
     branches:
-      - main
       - master
   workflow_dispatch:
 
@@ -18,7 +17,7 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          protocol: ftps # or ftp
+          protocol: ftp # or ftp
           server: aquashineexteriors.co.uk
           username: git_user@imageresizer.waveink.co.uk
           port: 21
