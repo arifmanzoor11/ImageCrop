@@ -49,3 +49,4 @@ jobs:
             chmod 644 ~/public_html/imageresizer/.htaccess
             chmod 755 ~/public_html/imageresizer/passenger_wsgi.py
             deactivate
+            
