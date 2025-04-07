@@ -861,3 +861,8 @@
 2025-04-07 10:55:23,104 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:55:23] "GET /download/_DSC3969.png HTTP/1.1" 200 -
 2025-04-07 10:55:23,105 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:55:23] "GET /download/_DSC3980.png HTTP/1.1" 200 -
 2025-04-07 10:55:23,106 - INFO - [werkzeug] - 127.0.0.1 - - [07/Apr/2025 10:55:23] "GET /download/_DSC3977.png HTTP/1.1" 200 -
+2025-04-07 12:00:45,042 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/passenger_wsgi.py', reloading
+2025-04-07 12:00:45,076 - INFO - [werkzeug] -  * Restarting with stat
+2025-04-07 12:00:45,222 - INFO - [__main__] - Starting Image Cropper Application...
+2025-04-07 12:00:45,244 - WARNING - [werkzeug] -  * Debugger is active!
+2025-04-07 12:00:45,249 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195

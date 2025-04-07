@@ -1,6 +1,17 @@
 Options +ExecCGI
 AddHandler cgi-script .py
-DirectoryIndex app.py
+DirectoryIndex passenger_wsgi.py
+
+<IfModule mod_passenger.c>
+    PassengerEnabled on
+    PassengerPython /home/YOUR_CPANEL_USERNAME/virtualenv/imageresizer/3.9/bin/python
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
