@@ -28,6 +28,8 @@ ENV/
 # IDE
 .idea/
 .vscode/
+uploads/
+processed/
 
 # Logs
 *.log
