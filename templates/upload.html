@@ -83,17 +83,17 @@
   <form id="uploadForm" method="POST" enctype="multipart/form-data" class="mb-4">
     <div class="mb-3">
       <label for="fileInput" class="form-label">Select Images</label>
-      <input type="file" class="form-control" name="file" multiple required id="fileInput">
+      <input type="file" class="form-control" name="file" multiple required id="fileInput" accept="image/*">
     </div>
 
     <div id="imagePreviewContainer" class="preview-container"></div>
 
     <div class="mb-3 mt-4">
-      <label for="width" class="form-label">Width:</label>
+      <label for="width" class="form-label">Width (px):</label>
       <input type="number" class="form-control" name="width" value="100" required>
     </div>
     <div class="mb-3">
-      <label for="height" class="form-label">Height:</label>
+      <label for="height" class="form-label">Height (px):</label>
       <input type="number" class="form-control" name="height" value="100" required>
     </div>
     <div class="mb-3">

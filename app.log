@@ -947,3 +947,37 @@
 2025-05-08 16:09:19,826 - INFO - [__main__] - Starting Image Cropper Application...
 2025-05-08 16:09:19,846 - WARNING - [werkzeug] -  * Debugger is active!
 2025-05-08 16:09:19,851 - INFO - [werkzeug] -  * Debugger PIN: 109-050-618
+2025-05-08 18:38:27,855 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2025-05-08 18:38:27,888 - INFO - [werkzeug] -  * Restarting with stat
+2025-05-08 18:38:28,026 - INFO - [__main__] - Starting Image Cropper Application...
+2025-05-08 18:38:28,046 - WARNING - [werkzeug] -  * Debugger is active!
+2025-05-08 18:38:28,051 - INFO - [werkzeug] -  * Debugger PIN: 109-050-618
+2025-05-08 23:16:17,049 - INFO - [__main__] - Starting Image Cropper Application...
+2025-05-08 23:16:17,080 - INFO - [werkzeug] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3002
+2025-05-08 23:16:17,080 - INFO - [werkzeug] - [33mPress CTRL+C to quit[0m
+2025-05-08 23:16:17,080 - INFO - [werkzeug] -  * Restarting with stat
+2025-05-08 23:16:17,169 - INFO - [__main__] - Starting Image Cropper Application...
+2025-05-08 23:16:17,184 - WARNING - [werkzeug] -  * Debugger is active!
+2025-05-08 23:16:17,190 - INFO - [werkzeug] -  * Debugger PIN: 109-050-618
+2025-05-08 23:16:55,980 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 23:16:55] "GET / HTTP/1.1" 200 -
+2025-05-08 23:16:56,054 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 23:16:56] "[36mGET /static/js/processStatus.js HTTP/1.1[0m" 304 -
+2025-05-08 23:16:56,054 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 23:16:56] "[36mGET /static/js/imagePreview.js HTTP/1.1[0m" 304 -
+2025-05-08 23:16:56,126 - ERROR - [__main__] - Page not found: http://localhost:3002/favicon.ico
+2025-05-08 23:16:56,128 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 23:16:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-08 23:17:02,490 - INFO - [__main__] - ====== New Image Processing Request ======
+2025-05-08 23:17:02,490 - INFO - [__main__] - Request received at: 2025-05-08 23:17:02.490920
+2025-05-08 23:17:02,495 - INFO - [__main__] - Number of files: 3
+2025-05-08 23:17:02,496 - INFO - [__main__] - Processing file: wellbeing-1.png
+2025-05-08 23:17:02,532 - INFO - [__main__] - Successfully processed: wellbeing-1.png
+2025-05-08 23:17:02,532 - INFO - [__main__] - Processing file: banner.png
+2025-05-08 23:17:02,562 - INFO - [__main__] - Successfully processed: banner.png
+2025-05-08 23:17:02,562 - INFO - [__main__] - Processing file: hrrp-logo-white-1280x475.png
+2025-05-08 23:17:02,581 - INFO - [__main__] - Successfully processed: hrrp-logo-white-1280x475.png
+2025-05-08 23:17:02,581 - INFO - [__main__] - ====== Request Processing Completed ======
+
+2025-05-08 23:17:02,583 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 23:17:02] "POST / HTTP/1.1" 200 -
+2025-05-08 23:17:02,589 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 23:17:02] "GET /download/banner.png HTTP/1.1" 200 -
+2025-05-08 23:17:02,589 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 23:17:02] "GET /download/wellbeing-1.png HTTP/1.1" 200 -
+2025-05-08 23:17:02,590 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 23:17:02] "GET /download/hrrp-logo-white-1280x475.png HTTP/1.1" 200 -
+2025-05-08 23:17:04,619 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 23:17:04] "GET /download/hrrp-logo-white-1280x475.png HTTP/1.1" 200 -
