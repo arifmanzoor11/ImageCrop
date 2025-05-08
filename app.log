@@ -927,3 +927,13 @@
 2025-05-08 14:37:59,382 - INFO - [__main__] - Starting Image Cropper Application...
 2025-05-08 14:37:59,402 - WARNING - [werkzeug] -  * Debugger is active!
 2025-05-08 14:37:59,407 - INFO - [werkzeug] -  * Debugger PIN: 109-050-618
+2025-05-08 15:48:05,235 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2025-05-08 15:48:05,278 - INFO - [werkzeug] -  * Restarting with stat
+2025-05-08 15:48:05,426 - INFO - [__main__] - Starting Image Cropper Application...
+2025-05-08 15:48:05,447 - WARNING - [werkzeug] -  * Debugger is active!
+2025-05-08 15:48:05,456 - INFO - [werkzeug] -  * Debugger PIN: 109-050-618
+2025-05-08 15:59:01,090 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2025-05-08 15:59:01,123 - INFO - [werkzeug] -  * Restarting with stat
+2025-05-08 15:59:01,276 - INFO - [__main__] - Starting Image Cropper Application...
+2025-05-08 15:59:01,297 - WARNING - [werkzeug] -  * Debugger is active!
+2025-05-08 15:59:01,302 - INFO - [werkzeug] -  * Debugger PIN: 109-050-618
