@@ -28,7 +28,7 @@ jobs:
 
       - name: Prepare files for deployment
         run: |
-          echo "Preparing app for FTP upload..."
+          echo "Preparing app for FTP upload.."
 
       - name: Deploy to cPanel via FTP 
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
