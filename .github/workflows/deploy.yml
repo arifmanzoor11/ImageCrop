@@ -33,7 +33,7 @@ jobs:
       - name: Deploy to cPanel via FTP 
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.CPANEL_SERVER }}
+          server: premium206.web-hosting.com
           username: ${{ secrets.CPANEL_USERNAME }}
           password: ${{ secrets.CPANEL_PASSWORD }}
           server-dir: ${{ env.DEPLOY_PATH }}/
