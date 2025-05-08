@@ -177,4 +177,3 @@ def internal_error(error):
 if __name__ == '__main__':
     logger.info('Starting Image Cropper Application...')
     app.run(debug=True, port=3002)
-    
