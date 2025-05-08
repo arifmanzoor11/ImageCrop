@@ -6,7 +6,7 @@ on:
 
 env:
   PYTHON_VERSION: '3.9'
-  DEPLOY_PATH: '/imageresizer.waveink.co.uk'
+  DEPLOY_PATH: '/imageresizer.waveink.co.uk/new'
 
 jobs:
   deploy:
@@ -30,7 +30,7 @@ jobs:
         run: |
           echo "Preparing app for FTP upload..."
 
-          
+
       - name: Deploy to cPanel via FTP 
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
