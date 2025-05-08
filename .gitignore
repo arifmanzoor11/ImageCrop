@@ -22,6 +22,7 @@ var/
 .env
 .env.local
 .venv
+.DS_Store
 venv/
 ENV/
 
