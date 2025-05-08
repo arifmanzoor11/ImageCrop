@@ -904,3 +904,26 @@
 2025-04-09 09:54:22,708 - INFO - [werkzeug] - 127.0.0.1 - - [09/Apr/2025 09:54:22] "GET / HTTP/1.1" 200 -
 2025-04-09 09:54:22,727 - INFO - [werkzeug] - 127.0.0.1 - - [09/Apr/2025 09:54:22] "[36mGET /static/js/imagePreview.js HTTP/1.1[0m" 304 -
 2025-04-09 09:54:22,728 - INFO - [werkzeug] - 127.0.0.1 - - [09/Apr/2025 09:54:22] "[36mGET /static/js/processStatus.js HTTP/1.1[0m" 304 -
+2025-05-08 11:57:15,728 - INFO - [__main__] - Starting Image Cropper Application...
+2025-05-08 11:57:15,757 - INFO - [werkzeug] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3002
+2025-05-08 11:57:15,757 - INFO - [werkzeug] - [33mPress CTRL+C to quit[0m
+2025-05-08 11:57:15,757 - INFO - [werkzeug] -  * Restarting with stat
+2025-05-08 11:57:15,851 - INFO - [__main__] - Starting Image Cropper Application...
+2025-05-08 11:57:15,865 - WARNING - [werkzeug] -  * Debugger is active!
+2025-05-08 11:57:15,871 - INFO - [werkzeug] -  * Debugger PIN: 109-050-618
+2025-05-08 11:57:19,079 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 11:57:19] "GET / HTTP/1.1" 200 -
+2025-05-08 11:57:19,212 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 11:57:19] "GET /static/js/processStatus.js HTTP/1.1" 200 -
+2025-05-08 11:57:19,212 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 11:57:19] "GET /static/js/imagePreview.js HTTP/1.1" 200 -
+2025-05-08 11:57:20,379 - ERROR - [__main__] - Page not found: http://127.0.0.1:3002/favicon.ico
+2025-05-08 11:57:20,382 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 11:57:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-08 14:12:03,100 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 14:12:03] "GET / HTTP/1.1" 200 -
+2025-05-08 14:12:03,121 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 14:12:03] "GET /static/js/processStatus.js HTTP/1.1" 200 -
+2025-05-08 14:12:03,121 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 14:12:03] "GET /static/js/imagePreview.js HTTP/1.1" 200 -
+2025-05-08 14:12:03,322 - ERROR - [__main__] - Page not found: http://localhost:3002/favicon.ico
+2025-05-08 14:12:03,323 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 14:12:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-08 14:37:59,192 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2025-05-08 14:37:59,232 - INFO - [werkzeug] -  * Restarting with stat
+2025-05-08 14:37:59,382 - INFO - [__main__] - Starting Image Cropper Application...
+2025-05-08 14:37:59,402 - WARNING - [werkzeug] -  * Debugger is active!
+2025-05-08 14:37:59,407 - INFO - [werkzeug] -  * Debugger PIN: 109-050-618
