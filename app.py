@@ -1,44 +1,80 @@
 import os
 import zipfile
 import logging
+import time
 from datetime import datetime
 from flask import Flask, request, render_template, send_file
 from PIL import Image
+from flask import send_from_directory
+from flask import after_this_request
 
-# Configure logging with timestamp and log levels
+Image.MAX_IMAGE_PIXELS = None
+
+# ---------- CONFIG ----------
+AUTO_DELETE_MINUTES = 30
+
+UPLOAD_FOLDER = "uploads"
+PROCESSED_FOLDER = "processed"
+
+# ---------- LOGGING ----------
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - [%(name)s] - %(message)s',
+    format="%(asctime)s - %(levelname)s - [%(name)s] - %(message)s",
     handlers=[
-        logging.StreamHandler(),  # Console handler
-        logging.FileHandler('app.log')  # File handler
+        logging.StreamHandler(),
+        logging.FileHandler("app.log")
     ]
 )
 
 logger = logging.getLogger(__name__)
 
+# ---------- APP ----------
 app = Flask(__name__)
-UPLOAD_FOLDER = 'uploads'
-PROCESSED_FOLDER = 'processed'
+
+app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
+app.config["PROCESSED_FOLDER"] = PROCESSED_FOLDER
+
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(PROCESSED_FOLDER, exist_ok=True)
 
-def clear_processed_folder():
-    """Removes all files from the processed folder to prevent duplication."""
-    for filename in os.listdir(PROCESSED_FOLDER):
-        file_path = os.path.join(PROCESSED_FOLDER, filename)
-        try:
-            if os.path.isfile(file_path):
-                os.unlink(file_path)
-        except Exception as e:
-            logger.error(f"Error deleting {file_path}: {e}")
 
+# ---------- AUTO CLEANUP ----------
+def cleanup_old_files():
+
+    now = time.time()
+    expire = AUTO_DELETE_MINUTES * 60
+
+    for folder in [UPLOAD_FOLDER, PROCESSED_FOLDER]:
+
+        for f in os.scandir(folder):
+
+            if f.is_file():
+
+                age = now - os.path.getmtime(f.path)
+
+                if age > expire:
+                    try:
+                        os.remove(f.path)
+                        logger.info(f"Deleted old file: {f.path}")
+                    except Exception as e:
+                        logger.error(f"Delete failed: {e}")
+
+
+# ---------- CLEAR PROCESSED ----------
+def clear_processed_folder():
+
+    for f in os.scandir(PROCESSED_FOLDER):
+
+        if f.is_file():
+            os.remove(f.path)
+
+
+# ---------- IMAGE RESIZE ----------
 def resize_image(image, target_width, target_height, mode):
-    """Resizes the image based on the selected mode."""
+
     if mode == "Stretch":
         return image.resize((target_width, target_height), Image.LANCZOS)
-    
-    # Cover mode: Maintain aspect ratio, crop excess
+
     img_ratio = image.width / image.height
     target_ratio = target_width / target_height
 
@@ -51,129 +87,132 @@ def resize_image(image, target_width, target_height, mode):
 
     image = image.resize((new_width, new_height), Image.LANCZOS)
 
-    # Center cropping
-    left = (new_width - target_width) / 2
-    top = (new_height - target_height) / 2
-    right = (new_width + target_width) / 2
-    bottom = (new_height + target_height) / 2
+    left = (new_width - target_width) // 2
+    top = (new_height - target_height) // 2
 
-    return image.crop((left, top, right, bottom))
+    return image.crop((left, top, left + target_width, top + target_height))
 
 
-@app.route('/', methods=['GET', 'POST'])
+# ---------- UPLOAD ----------
+@app.route("/", methods=["GET", "POST"])
 def upload_file():
-    """Handles file uploads, processes images, and renders the result page."""
-    if request.method == 'POST':
+
+    cleanup_old_files()
+
+    if request.method == "POST":
+
         try:
-            # Log request details
-            logger.info('====== New Image Processing Request ======')
-            logger.info(f'Request received at: {datetime.now()}')
-            
-            files = request.files.getlist('file')
-            total_files = len(files)
-            logger.info(f'Number of files: {total_files}')
-            
+
+            logger.info("====== New Image Request ======")
+
+            files = request.files.getlist("file")
+
+            width = int(request.form.get("width", 1200))
+            height = int(request.form.get("height", 630))
+            format = request.form.get("format", "WEBP").upper()
+            mode = request.form.get("mode", "Cover")
+
             clear_processed_folder()
-            width = int(request.form.get('width', 100))
-            height = int(request.form.get('height', 100))
-            format = request.form.get('format', 'PNG').upper()
-            mode = request.form.get('mode', 'Cover')
-            
+
             processed_files = []
 
-            for index, file in enumerate(files, 1):
-                if file:
-                    filename = file.filename
-                    logger.info(f'Processing file: {filename}')
-                    try:
-                        image = Image.open(file)
-                        processed_img = resize_image(image, width, height, mode)
+            for file in files:
+
+                if not file:
+                    continue
+
+                filename = file.filename
+
+                try:
+
+                    with Image.open(file) as img:
+
+                        img.load()
+
+                        processed_img = resize_image(img, width, height, mode)
 
                         if format == "JPEG" and processed_img.mode == "RGBA":
                             processed_img = processed_img.convert("RGB")
 
-                        original_name, _ = os.path.splitext(file.filename)
-                        filename = f"{original_name}.{format.lower()}"
+                        name, _ = os.path.splitext(filename)
 
-                        filepath = os.path.join(PROCESSED_FOLDER, filename)
-                        processed_img.save(filepath, format=format)
-                        processed_files.append(filename)
-                        logger.info(f'Successfully processed: {filename}')
-                        
-                    except Exception as e:
-                        logger.error(f'Error processing {filename}: {str(e)}')
-                        raise
+                        new_filename = f"{name}.{format.lower()}"
 
-            logger.info('====== Request Processing Completed ======\n')
-            return render_template('download.html', files=processed_files)
+                        path = os.path.join(PROCESSED_FOLDER, new_filename)
+
+                        processed_img.save(path, format=format, optimize=True)
+
+                        processed_img.close()
+
+                        processed_files.append(new_filename)
+
+                        logger.info(f"Processed: {new_filename}")
+
+                except Exception as e:
+                    logger.error(f"Image failed: {filename} - {e}")
+
+            return render_template("download.html", files=processed_files)
 
         except Exception as e:
-            logger.error(f'Fatal error: {str(e)}')
-            return f'Error: {str(e)}', 500
 
-    return render_template('upload.html')
+            logger.error(f"Fatal error: {e}")
 
-@app.route('/download/<filename>')
+            return f"Error: {e}", 500
+
+    return render_template("upload.html")
+
+
+# ---------- DOWNLOAD SINGLE ----------
+@app.route("/processed/<filename>")
+def serve_image(filename):
+    return send_from_directory(PROCESSED_FOLDER, filename)
+
+@app.route("/download/<filename>")
 def download_file(filename):
-    """Allows individual processed files to be downloaded."""
-    return send_file(os.path.join(PROCESSED_FOLDER, filename), as_attachment=True)
+    path = os.path.join(PROCESSED_FOLDER, filename)
+    return send_file(path, as_attachment=True)
 
-@app.route('/download_all', methods=['GET', 'POST'])
-def download_all():
-    if request.method == 'POST':
-        try:
-            # Create a timestamp for unique zip name
-            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-            zip_filename = f'processed_images_{timestamp}.zip'
-            zip_path = os.path.join(app.config['UPLOAD_FOLDER'], zip_filename)
-
-            # Create ZIP file
-            with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
-                for filename in os.listdir(app.config['UPLOAD_FOLDER']):
-                    if filename.endswith(('.png', '.jpg', '.jpeg', '.gif')):
-                        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-                        zipf.write(file_path, filename)
-
-            # Send file and delete after sending
-            return send_file(
-                zip_path,
-                as_attachment=True,
-                download_name=zip_filename
-            )
-        except Exception as e:
-            return f"Error creating zip file: {str(e)}", 500
-    
-    # GET request - show download page
-    images = []
-    for filename in os.listdir(app.config['UPLOAD_FOLDER']):
-        if filename.endswith(('.png', '.jpg', '.jpeg', '.gif')):
-            images.append(filename)
-    return render_template('download.html', images=images)
-
-@app.route('/download_zip')
+# ---------- DOWNLOAD ZIP ----------
+@app.route("/download_zip")
 def download_zip():
-    """Creates and provides a ZIP file of all processed images."""
-    zip_filename = os.path.join(PROCESSED_FOLDER, "processed_images.zip")
 
-    with zipfile.ZipFile(zip_filename, 'w', zipfile.ZIP_DEFLATED, allowZip64=True) as zipf:
+    zip_path = os.path.join(PROCESSED_FOLDER, "images.zip")
+
+    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zipf:
+
         for filename in os.listdir(PROCESSED_FOLDER):
-            if filename != "processed_images.zip":  # Exclude previous ZIP files
+
+            if filename.lower().endswith((".png",".jpg",".jpeg",".webp",".gif")):
+
                 file_path = os.path.join(PROCESSED_FOLDER, filename)
+
                 zipf.write(file_path, filename)
 
-    return send_file(zip_filename, as_attachment=True)
+    @after_this_request
+    def remove_zip(response):
+        try:
+            os.remove(zip_path)
+        except Exception as e:
+            logger.error(f"Failed to delete zip: {e}")
+        return response
 
-# Add error handlers
+    return send_file(zip_path, as_attachment=True)
+# ---------- ERROR PAGES ----------
 @app.errorhandler(404)
-def not_found_error(error):
-    logger.error(f'Page not found: {request.url}')
-    return render_template('404.html'), 404
+def not_found(error):
+
+    return render_template("404.html"), 404
+
 
 @app.errorhandler(500)
-def internal_error(error):
-    logger.error(f'Server Error: {str(error)}')
-    return render_template('500.html'), 500
+def server_error(error):
 
-if __name__ == '__main__':
-    logger.info('Starting Image Cropper Application...')
+    return render_template("500.html"), 500
+
+
+# ---------- RUN ----------
+if __name__ == "__main__":
+
+    logger.info("Starting Image Processor")
+
     app.run(debug=True, port=3002)

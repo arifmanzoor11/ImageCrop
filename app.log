@@ -981,3 +981,208 @@
 2025-05-08 23:17:02,589 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 23:17:02] "GET /download/wellbeing-1.png HTTP/1.1" 200 -
 2025-05-08 23:17:02,590 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 23:17:02] "GET /download/hrrp-logo-white-1280x475.png HTTP/1.1" 200 -
 2025-05-08 23:17:04,619 - INFO - [werkzeug] - 127.0.0.1 - - [08/May/2025 23:17:04] "GET /download/hrrp-logo-white-1280x475.png HTTP/1.1" 200 -
+2026-03-12 12:11:58,780 - INFO - [__main__] - Starting Image Cropper Application...
+2026-03-12 12:11:58,825 - INFO - [werkzeug] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3002
+2026-03-12 12:11:58,825 - INFO - [werkzeug] - [33mPress CTRL+C to quit[0m
+2026-03-12 12:11:58,825 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-12 12:11:58,929 - INFO - [__main__] - Starting Image Cropper Application...
+2026-03-12 12:11:58,948 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-12 12:11:58,958 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-12 12:12:12,153 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:12:12] "GET / HTTP/1.1" 200 -
+2026-03-12 12:12:12,208 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:12:12] "GET /static/js/processStatus.js HTTP/1.1" 200 -
+2026-03-12 12:12:12,208 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:12:12] "GET /static/js/imagePreview.js HTTP/1.1" 200 -
+2026-03-12 12:12:12,382 - ERROR - [__main__] - Page not found: http://127.0.0.1:3002/favicon.ico
+2026-03-12 12:12:12,386 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:12:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-12 12:12:34,896 - INFO - [__main__] - ====== New Image Processing Request ======
+2026-03-12 12:12:34,897 - INFO - [__main__] - Request received at: 2026-03-12 12:12:34.897417
+2026-03-12 12:12:34,904 - INFO - [__main__] - Number of files: 3
+2026-03-12 12:12:34,904 - INFO - [__main__] - Processing file: WordPress Website Running Slow.png
+2026-03-12 12:12:35,141 - INFO - [__main__] - Processing file: WordPress & WooCommerce Speed Optimization Service.jpg
+2026-03-12 12:12:35,193 - INFO - [__main__] - Processing file: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:12:35,248 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:12:35] "POST / HTTP/1.1" 200 -
+2026-03-12 12:12:35,261 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:12:35] "[36mGET /static/js/processStatus.js HTTP/1.1[0m" 304 -
+2026-03-12 12:12:35,262 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:12:35] "[36mGET /static/js/imagePreview.js HTTP/1.1[0m" 304 -
+2026-03-12 12:12:48,335 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:12:48] "GET / HTTP/1.1" 200 -
+2026-03-12 12:12:48,362 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:12:48] "GET /static/js/imagePreview.js HTTP/1.1" 200 -
+2026-03-12 12:12:48,363 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:12:48] "GET /static/js/processStatus.js HTTP/1.1" 200 -
+2026-03-12 12:12:48,435 - ERROR - [__main__] - Page not found: http://127.0.0.1:3002/favicon.ico
+2026-03-12 12:12:48,435 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:12:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-12 12:12:55,119 - INFO - [__main__] - ====== New Image Processing Request ======
+2026-03-12 12:12:55,119 - INFO - [__main__] - Request received at: 2026-03-12 12:12:55.119282
+2026-03-12 12:12:55,128 - INFO - [__main__] - Number of files: 4
+2026-03-12 12:12:55,128 - INFO - [__main__] - Processing file: WordPress Website Running Slow.png
+2026-03-12 12:12:55,269 - INFO - [__main__] - Processing file: WordPress & WooCommerce Speed Optimization Service.jpg
+2026-03-12 12:12:55,320 - INFO - [__main__] - Processing file: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:12:55,372 - INFO - [__main__] - Processing file: WordPress & WooCommerce Speed Optimization Service.png
+2026-03-12 12:12:55,431 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:12:55] "POST / HTTP/1.1" 200 -
+2026-03-12 12:14:37,281 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-12 12:14:37,316 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-12 12:16:41,029 - INFO - [__main__] - Starting Image Processor
+2026-03-12 12:16:41,065 - INFO - [werkzeug] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3002
+2026-03-12 12:16:41,065 - INFO - [werkzeug] - [33mPress CTRL+C to quit[0m
+2026-03-12 12:16:41,067 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-12 12:16:41,220 - INFO - [__main__] - Starting Image Processor
+2026-03-12 12:16:41,242 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-12 12:16:41,249 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-12 12:16:41,514 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:16:41] "GET / HTTP/1.1" 200 -
+2026-03-12 12:16:41,581 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:16:41] "[36mGET /static/js/processStatus.js HTTP/1.1[0m" 304 -
+2026-03-12 12:16:41,581 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:16:41] "[36mGET /static/js/imagePreview.js HTTP/1.1[0m" 304 -
+2026-03-12 12:16:41,630 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:16:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-12 12:16:51,397 - INFO - [__main__] - ====== New Image Request ======
+2026-03-12 12:16:51,577 - INFO - [__main__] - Processed: WordPress Website Running Slow.webp
+2026-03-12 12:16:51,628 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:16:51,686 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:16:51,805 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:16:51,897 - INFO - [__main__] - Processed: pagespeed.webp
+2026-03-12 12:16:51,900 - ERROR - [__main__] - Fatal error: Could not build url for endpoint 'serve_image' with values ['filename']. Did you mean 'static' instead?
+2026-03-12 12:16:51,900 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:16:51] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-03-12 12:16:56,072 - INFO - [__main__] - ====== New Image Request ======
+2026-03-12 12:16:56,218 - INFO - [__main__] - Processed: WordPress Website Running Slow.webp
+2026-03-12 12:16:56,268 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:16:56,320 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:16:56,377 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:16:56,464 - INFO - [__main__] - Processed: pagespeed.webp
+2026-03-12 12:16:56,465 - ERROR - [__main__] - Fatal error: Could not build url for endpoint 'serve_image' with values ['filename']. Did you mean 'static' instead?
+2026-03-12 12:16:56,466 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:16:56] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-03-12 12:17:48,811 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-12 12:17:48,838 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-12 12:17:48,999 - INFO - [__main__] - Starting Image Processor
+2026-03-12 12:17:49,025 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-12 12:17:49,032 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-12 12:17:50,044 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-12 12:17:50,073 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-12 12:17:50,180 - INFO - [__main__] - Starting Image Processor
+2026-03-12 12:17:50,207 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-12 12:17:50,212 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-12 12:17:52,244 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-12 12:17:52,286 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-12 12:17:52,395 - INFO - [__main__] - Starting Image Processor
+2026-03-12 12:17:52,412 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-12 12:17:52,417 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-12 12:17:58,490 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-12 12:17:58,527 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-12 12:17:58,628 - INFO - [__main__] - Starting Image Processor
+2026-03-12 12:17:58,646 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-12 12:17:58,651 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-12 12:18:22,862 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-12 12:18:22,905 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-12 12:18:49,288 - INFO - [__main__] - Starting Image Processor
+2026-03-12 12:18:49,320 - INFO - [werkzeug] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3002
+2026-03-12 12:18:49,320 - INFO - [werkzeug] - [33mPress CTRL+C to quit[0m
+2026-03-12 12:18:49,320 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-12 12:18:49,420 - INFO - [__main__] - Starting Image Processor
+2026-03-12 12:18:49,439 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-12 12:18:49,445 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-12 12:18:56,147 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:18:56] "GET / HTTP/1.1" 200 -
+2026-03-12 12:18:56,171 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:18:56] "GET /static/js/imagePreview.js HTTP/1.1" 200 -
+2026-03-12 12:18:56,172 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:18:56] "GET /static/js/processStatus.js HTTP/1.1" 200 -
+2026-03-12 12:18:56,536 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:18:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-12 12:19:09,921 - INFO - [__main__] - ====== New Image Request ======
+2026-03-12 12:19:10,105 - INFO - [__main__] - Processed: WordPress Website Running Slow.webp
+2026-03-12 12:19:10,159 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:19:10,213 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:19:10,272 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:19:10,362 - INFO - [__main__] - Processed: pagespeed.webp
+2026-03-12 12:19:10,439 - INFO - [__main__] - Processed: wordpress-speed.webp
+2026-03-12 12:19:10,442 - ERROR - [__main__] - Fatal error: Could not build url for endpoint 'download_file' with values ['filename']. Did you mean 'download_zip' instead?
+2026-03-12 12:19:10,443 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:19:10] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-03-12 12:20:24,247 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-12 12:20:24,344 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-12 12:20:24,516 - INFO - [__main__] - Starting Image Processor
+2026-03-12 12:20:24,543 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-12 12:20:24,553 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-12 12:20:28,418 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:20:28] "GET / HTTP/1.1" 200 -
+2026-03-12 12:20:28,443 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:20:28] "GET /static/js/imagePreview.js HTTP/1.1" 200 -
+2026-03-12 12:20:28,443 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:20:28] "GET /static/js/processStatus.js HTTP/1.1" 200 -
+2026-03-12 12:20:28,542 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:20:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-12 12:20:35,930 - INFO - [__main__] - ====== New Image Request ======
+2026-03-12 12:20:36,111 - INFO - [__main__] - Processed: WordPress Website Running Slow.webp
+2026-03-12 12:20:36,162 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:20:36,216 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:20:36,273 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:20:36,369 - INFO - [__main__] - Processed: pagespeed.webp
+2026-03-12 12:20:36,370 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:20:36] "POST / HTTP/1.1" 200 -
+2026-03-12 12:20:36,381 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:20:36] "GET /processed/WordPress%20Website%20Running%20Slow.webp HTTP/1.1" 200 -
+2026-03-12 12:20:36,381 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:20:36] "GET /processed/WordPress%20&%20WooCommerce%20Speed%20Optimization%20Service.webp HTTP/1.1" 200 -
+2026-03-12 12:20:36,382 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:20:36] "GET /processed/pagespeed.webp HTTP/1.1" 200 -
+2026-03-12 12:20:48,515 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:20:48] "GET /download_zip HTTP/1.1" 200 -
+2026-03-12 12:22:04,378 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-12 12:22:04,412 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-12 12:22:04,571 - INFO - [__main__] - Starting Image Processor
+2026-03-12 12:22:04,597 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-12 12:22:04,607 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-12 12:22:18,730 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-12 12:22:18,773 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-12 12:22:18,927 - INFO - [__main__] - Starting Image Processor
+2026-03-12 12:22:18,950 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-12 12:22:18,956 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-12 12:23:31,591 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-12 12:23:31,615 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-12 12:23:31,787 - INFO - [__main__] - Starting Image Processor
+2026-03-12 12:23:31,810 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-12 12:23:31,817 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-12 12:23:40,779 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:23:40] "GET / HTTP/1.1" 200 -
+2026-03-12 12:23:40,816 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:23:40] "[36mGET /static/js/processStatus.js HTTP/1.1[0m" 304 -
+2026-03-12 12:23:40,818 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:23:40] "[36mGET /static/js/imagePreview.js HTTP/1.1[0m" 304 -
+2026-03-12 12:24:04,134 - INFO - [__main__] - ====== New Image Request ======
+2026-03-12 12:24:04,310 - INFO - [__main__] - Processed: Advanced WordPress & WooCommerce speed optimization to achieve 90+ Google PageSpeed score.webp
+2026-03-12 12:24:04,420 - INFO - [__main__] - Processed: ChatGPT Image Mar 11, 2026, 02_50_08 PM.webp
+2026-03-12 12:24:04,527 - INFO - [__main__] - Processed: ChatGPT Image Mar 11, 2026, 02_49_52 PM.webp
+2026-03-12 12:24:04,566 - INFO - [__main__] - Processed: f688bccdf85e8570ff4c27d65ca1f580.webp
+2026-03-12 12:24:04,573 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:24:04] "POST / HTTP/1.1" 200 -
+2026-03-12 12:24:04,584 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:24:04] "GET /processed/ChatGPT%20Image%20Mar%2011,%202026,%2002_49_52%20PM.webp HTTP/1.1" 200 -
+2026-03-12 12:24:04,584 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:24:04] "GET /processed/ChatGPT%20Image%20Mar%2011,%202026,%2002_50_08%20PM.webp HTTP/1.1" 200 -
+2026-03-12 12:24:04,584 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:24:04] "GET /processed/f688bccdf85e8570ff4c27d65ca1f580.webp HTTP/1.1" 200 -
+2026-03-12 12:24:04,585 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:24:04] "GET /processed/Advanced%20WordPress%20&%20WooCommerce%20speed%20optimization%20to%20achieve%2090+%20Google%20PageSpeed%20score.webp HTTP/1.1" 200 -
+2026-03-12 12:24:09,022 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:24:09] "GET / HTTP/1.1" 200 -
+2026-03-12 12:24:09,080 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:24:09] "[36mGET /static/js/imagePreview.js HTTP/1.1[0m" 304 -
+2026-03-12 12:24:09,081 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:24:09] "[36mGET /static/js/processStatus.js HTTP/1.1[0m" 304 -
+2026-03-12 12:24:22,201 - INFO - [__main__] - ====== New Image Request ======
+2026-03-12 12:24:22,331 - INFO - [__main__] - Processed: WordPress Website Running Slow.webp
+2026-03-12 12:24:22,379 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:24:22,430 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:24:22,482 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:24:22,568 - INFO - [__main__] - Processed: pagespeed.webp
+2026-03-12 12:24:22,570 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:24:22] "POST / HTTP/1.1" 200 -
+2026-03-12 12:24:22,581 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:24:22] "GET /processed/WordPress%20Website%20Running%20Slow.webp HTTP/1.1" 200 -
+2026-03-12 12:24:22,581 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:24:22] "GET /processed/WordPress%20&%20WooCommerce%20Speed%20Optimization%20Service.webp HTTP/1.1" 200 -
+2026-03-12 12:24:22,582 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:24:22] "GET /processed/pagespeed.webp HTTP/1.1" 200 -
+2026-03-12 12:24:25,115 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:24:25] "GET / HTTP/1.1" 200 -
+2026-03-12 12:24:25,155 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:24:25] "[36mGET /static/js/imagePreview.js HTTP/1.1[0m" 304 -
+2026-03-12 12:24:25,155 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:24:25] "[36mGET /static/js/processStatus.js HTTP/1.1[0m" 304 -
+2026-03-12 12:25:52,762 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:25:52] "GET / HTTP/1.1" 200 -
+2026-03-12 12:26:17,799 - INFO - [__main__] - ====== New Image Request ======
+2026-03-12 12:26:17,944 - INFO - [__main__] - Processed: WordPress Website Running Slow.webp
+2026-03-12 12:26:17,995 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:26:18,097 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:26:18,155 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:26:18,245 - INFO - [__main__] - Processed: pagespeed.webp
+2026-03-12 12:26:18,247 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:26:18] "POST / HTTP/1.1" 200 -
+2026-03-12 12:26:18,268 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:26:18] "GET /processed/WordPress%20Website%20Running%20Slow.webp HTTP/1.1" 200 -
+2026-03-12 12:26:18,270 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:26:18] "GET /processed/WordPress%20&%20WooCommerce%20Speed%20Optimization%20Service.webp HTTP/1.1" 200 -
+2026-03-12 12:26:18,270 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:26:18] "GET /processed/pagespeed.webp HTTP/1.1" 200 -
+2026-03-12 12:27:04,555 - INFO - [__main__] - ====== New Image Request ======
+2026-03-12 12:27:04,703 - INFO - [__main__] - Processed: WordPress Website Running Slow.webp
+2026-03-12 12:27:04,755 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:27:04,810 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:27:04,869 - INFO - [__main__] - Processed: WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 12:27:04,957 - INFO - [__main__] - Processed: pagespeed.webp
+2026-03-12 12:27:04,960 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:27:04] "POST / HTTP/1.1" 200 -
+2026-03-12 12:27:04,980 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:27:04] "GET /processed/WordPress%20&%20WooCommerce%20Speed%20Optimization%20Service.webp HTTP/1.1" 200 -
+2026-03-12 12:27:04,981 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:27:04] "GET /processed/WordPress%20Website%20Running%20Slow.webp HTTP/1.1" 200 -
+2026-03-12 12:27:04,984 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:27:04] "GET /processed/pagespeed.webp HTTP/1.1" 200 -
+2026-03-12 12:27:10,093 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:27:10] "GET / HTTP/1.1" 200 -
+2026-03-12 12:28:01,547 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:28:01] "GET / HTTP/1.1" 200 -
+2026-03-12 12:28:04,250 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:28:04] "[33mGET /downloads HTTP/1.1[0m" 404 -
+2026-03-12 12:28:07,578 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:28:07] "GET / HTTP/1.1" 200 -
+2026-03-12 12:29:11,126 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:29:11] "GET / HTTP/1.1" 200 -
+2026-03-12 12:29:21,192 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:29:21] "GET / HTTP/1.1" 200 -
+2026-03-12 12:30:03,310 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:30:03] "GET / HTTP/1.1" 200 -
+2026-03-12 12:30:12,212 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:30:12] "GET / HTTP/1.1" 200 -
+2026-03-12 12:30:14,646 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:30:14] "[33mGET /http://waveink.co.uk/ HTTP/1.1[0m" 404 -
+2026-03-12 12:30:30,499 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:30:30] "[33mGET /http://waveink.co.uk/ HTTP/1.1[0m" 404 -
+2026-03-12 12:30:32,275 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:30:32] "GET / HTTP/1.1" 200 -
+2026-03-12 12:30:44,522 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:30:44] "GET / HTTP/1.1" 200 -

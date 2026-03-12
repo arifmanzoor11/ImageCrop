@@ -1,192 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Image Processor</title>
 
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Image Cropper Webapp is a free online tool that lets you crop, resize, and convert images into multiple formats quickly and easily.">
-  <meta name="keywords" content="image cropper, image resize, online image editor, crop images, convert images, free image tool">
-  <meta name="author" content="Your Name">
+  <meta name="description"
+    content="Free online image cropper and resizer. Convert images to WebP, PNG, JPEG for WordPress and websites.">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Image Cropper Webapp">
-  <meta property="og:description" content="Crop and resize your images online with ease using our free tool.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourdomain.com">
-  <meta property="og:image" content="https://yourdomain.com/path/to/preview-image.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Image Cropper Webapp">
-  <meta name="twitter:description" content="Crop and resize your images online quickly with our free Image Cropper Webapp.">
-  <meta name="twitter:image" content="https://yourdomain.com/path/to/preview-image.jpg">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-  <style>
-    body {
-      background-color: #f8f9fa;
-    }
-    .preview-container {
-      margin: 20px 0;
-      padding: 10px;
-      background: #f8f9fa;
-      border-radius: 8px;
-      display: flex;
-    }
-    .preview-item {
-      margin: 5px;
-      text-align: center;
-    }
-    .preview-image {
-      max-width: 150px;
-      max-height: 150px;
-      object-fit: contain;
-      margin-bottom: 5px;
-    }
-    .filename {
-      font-size: 0.8em;
-      color: #6c757d;
-      display: block;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 150px;
-    }
-    #processingStatus {
-      background-color: #f8f9fa;
-      padding: 20px;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-    #currentFileStatus {
-      font-size: 1.1em;
-      color: #6c757d;
-    }
-    .progress {
-      height: 25px;
-    }
-    .progress-bar {
-      font-size: 1em;
-      line-height: 25px;
-    }
-  </style>
 </head>
-<body class="container mt-5">
-  <h1 class="display-4 text-center">Image Processor</h1>
-  <p class="lead text-center">Easily crop, resize, and convert your images online in seconds.</p>
 
-  <form id="uploadForm" method="POST" enctype="multipart/form-data" class="mb-4">
-    <div class="mb-3">
-      <label for="fileInput" class="form-label">Select Images</label>
-      <input type="file" class="form-control" name="file" multiple required id="fileInput" accept="image/*">
+<body class="bg-gray-50 text-gray-800">
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="flex justify-between items-center h-16">
+
+        <!-- Logo -->
+        <a href="/" class="text-xl font-bold text-blue-600">
+          ImageProcessor
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a href="http://waveink.co.uk/" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium">
+            WaveInk
+          </a>
+
+          <a href="/" class="text-gray-700 hover:text-blue-600 font-medium">
+            Upload
+          </a>
+
+          <a href="https://github.com/waveinklimited/" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium">
+            GitHub
+          </a>
+
+        </div>
+
+        <!-- Mobile Button -->
+        <button id="menuBtn" class="md:hidden">
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+
+          </svg>
+
+        </button>
+
+      </div>
+
     </div>
 
-    <div id="imagePreviewContainer" class="preview-container"></div>
+    <!-- Mobile Menu -->
 
-    <div class="mb-3 mt-4">
-      <label for="width" class="form-label">Width (px):</label>
-      <input type="number" class="form-control" name="width" value="100" required>
-    </div>
-    <div class="mb-3">
-      <label for="height" class="form-label">Height (px):</label>
-      <input type="number" class="form-control" name="height" value="100" required>
-    </div>
-    <div class="mb-3">
-      <label for="format" class="form-label">Format:</label>
-      <select class="form-select" name="format">
-        <option value="PNG">PNG</option>
-        <option value="JPEG">JPEG</option>
-        <option value="BMP">BMP</option>
-        <option value="GIF">GIF</option>
-        <option value="TIFF">TIFF</option>
-        <option value="ICO">ICO</option>
-        <option value="WEBP">WebP</option>
-        <option value="PPM">PPM</option>
-        <option value="TGA">TGA</option>
-      </select>
-    </div>
-    <div class="mb-3">
-      <label for="mode" class="form-label">Resize Mode:</label>
-      <select class="form-select" name="mode">
-        <option value="Cover">Cover</option>
-        <option value="Stretch">Stretch</option>
-      </select>
+    <div id="mobileMenu" class="hidden md:hidden px-6 pb-4">
+
+      <a href="/" class="block py-2 text-gray-700 hover:text-blue-600">
+        Upload
+      </a>
+
+      <a href="/downloads" class="block py-2 text-gray-700 hover:text-blue-600">
+        Downloads
+      </a>
+
+      <a href="https://github.com" target="_blank" class="block py-2 text-gray-700 hover:text-blue-600">
+        GitHub
+      </a>
+
     </div>
 
-    <button type="submit" class="btn btn-primary">Upload & Process</button>
-  </form>
+  </nav>
 
-  <div id="processingStatus" style="display: none;" class="mt-4">
-    <h3 class="text-center">Processing Images</h3>
-    <div class="progress mb-3">
-      <div id="processingProgress" class="progress-bar progress-bar-striped progress-bar-animated" 
-           role="progressbar" style="width: 0%">0%</div>
+  <script>
+
+    const btn = document.getElementById("menuBtn")
+    const menu = document.getElementById("mobileMenu")
+
+    btn.addEventListener("click", () => {
+
+      menu.classList.toggle("hidden")
+
+    })
+
+  </script>
+  <div class="max-w-5xl mx-auto px-4 py-10">
+
+    <!-- Header -->
+    <div class="text-center mb-10">
+      <h1 class="text-4xl font-bold text-gray-900 mb-3">Image Processor</h1>
+      <p class="text-lg text-gray-600">
+        Crop, resize and convert images instantly for web & WordPress.
+      </p>
     </div>
-    <p class="text-center">Processing: <span id="currentFileName">-</span></p>
+
+
+    <!-- Upload Card -->
+    <div class="bg-white shadow-lg rounded-xl p-8">
+
+      <form id="uploadForm" method="POST" enctype="multipart/form-data">
+
+        <!-- Upload -->
+        <label class="block text-sm font-medium mb-2">Upload Images</label>
+
+        <div
+          class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center cursor-pointer hover:border-blue-500 transition">
+
+          <input type="file" name="file" multiple required id="fileInput" accept="image/*" class="hidden" />
+
+          <p class="text-gray-500">
+            Drag & drop images here or
+            <span class="text-blue-600 font-semibold">browse</span>
+          </p>
+
+        </div>
+
+
+        <!-- Preview -->
+        <div id="imagePreviewContainer" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+        </div>
+
+
+        <!-- Resize Settings -->
+        <div class="grid md:grid-cols-2 gap-6 mt-8">
+
+          <div>
+            <label class="block text-sm font-medium mb-2">Width</label>
+            <input type="number" name="width" value="1200"
+              class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-2">Height</label>
+            <input type="number" name="height" value="630"
+              class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
+          </div>
+
+        </div>
+
+
+        <!-- WordPress Presets -->
+        <div class="mt-6">
+
+          <label class="block text-sm font-medium mb-2">
+            WordPress Preset
+          </label>
+
+          <select id="preset" class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
+
+            <option value="">Custom</option>
+            <option value="1200x630">Blog Featured Image</option>
+            <option value="800x800">WooCommerce Product</option>
+            <option value="1920x1080">Hero Banner</option>
+
+          </select>
+
+        </div>
+
+
+        <!-- Format -->
+        <div class="mt-6">
+
+          <label class="block text-sm font-medium mb-2">
+            Output Format
+          </label>
+
+          <select name="format" class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
+
+            <option value="WEBP" selected>WebP (Recommended)</option>
+            <option value="JPEG">JPEG</option>
+            <option value="PNG">PNG</option>
+            <option value="GIF">GIF</option>
+            <option value="BMP">BMP</option>
+            <option value="TIFF">TIFF</option>
+
+          </select>
+
+        </div>
+
+
+        <!-- Resize Mode -->
+        <div class="mt-6">
+
+          <label class="block text-sm font-medium mb-2">
+            Resize Mode
+          </label>
+
+          <select name="mode" class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
+
+            <option value="Cover">Cover</option>
+            <option value="Stretch">Stretch</option>
+
+          </select>
+
+        </div>
+
+
+        <!-- Submit -->
+        <button type="submit"
+          class="mt-8 w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition">
+
+          Upload & Process Images
+
+        </button>
+
+      </form>
+
+    </div>
+
+
+    <!-- Processing UI -->
+    <div id="processingStatus" class="hidden mt-10 bg-white shadow-lg rounded-xl p-6">
+
+      <h3 class="text-xl font-semibold mb-4 text-center">
+        Processing Images
+      </h3>
+
+      <div class="w-full bg-gray-200 rounded-full h-4">
+
+        <div id="processingProgress" class="bg-blue-600 h-4 rounded-full text-xs text-white text-center"
+          style="width:0%">0%</div>
+
+      </div>
+
+      <p class="text-center mt-3 text-gray-600">
+        Processing: <span id="currentFileName">-</span>
+      </p>
+
+    </div>
+
+
+    <!-- Info Section -->
+    <div class="mt-14 space-y-8 text-gray-700">
+
+      <div>
+        <h2 class="text-2xl font-semibold mb-2">How It Works</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Upload one or multiple images.</li>
+          <li>Select your desired width and height.</li>
+          <li>Choose format like WebP or JPEG.</li>
+          <li>Download optimized images instantly.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-semibold mb-2">Features</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Multiple image upload</li>
+          <li>WordPress optimized presets</li>
+          <li>Fast image processing</li>
+          <li>Download individually or as ZIP</li>
+        </ul>
+      </div>
+
+    </div>
+
   </div>
 
-  <h2>How It Works</h2>
-  <ul>
-    <li><strong>Upload Your Images:</strong> Select one or multiple images from your device.</li>
-    <li><strong>Customize Your Crop:</strong> Choose your desired dimensions and resize mode (Cover or Stretch).</li>
-    <li><strong>Convert Formats:</strong> Save your images in your preferred format like PNG, JPEG, BMP, and more.</li>
-    <li><strong>Download & Share:</strong> Download processed images individually or as a ZIP file for convenience.</li>
-  </ul>
 
-  <h2>Features</h2>
-  <ul>
-    <li>Live image preview before upload.</li>
-    <li>Responsive design that works on all devices.</li>
-    <li>Fast and secure image processing.</li>
-    <li>Easy-to-use interface with modern design.</li>
-  </ul>
-
-  <h2>Get Started</h2>
-  <p>Upload your images now and experience hassle-free cropping and resizing!</p>
-
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="{{ url_for('static', filename='js/imagePreview.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/processStatus.js') }}"></script>
   <script>
-    const processingStatus = new ProcessingStatus();
-    
-    document.getElementById('fileInput').addEventListener('change', function(e) {
-      updateImagePreviews(this.files);
-    });
 
-    document.getElementById('uploadForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData(this);
-      const submitButton = this.querySelector('button[type="submit"]');
-      
-      submitButton.disabled = true;
-      processingStatus.show();
+    const fileInput = document.getElementById("fileInput");
+    const preview = document.getElementById("imagePreviewContainer");
 
-      fetch('/', {
-        method: 'POST',
-        body: formData
-      })
-      .then(response => {
-        if (!response.ok) throw new Error('Upload failed');
-        return response.text();
-      })
-      .then(html => {
-        document.open();
-        document.write(html);
-        document.close();
-      })
-      .catch(error => {
-        alert(error.message);
-        submitButton.disabled = false;
-        processingStatus.reset();
+    document.querySelector(".border-dashed").onclick = () => fileInput.click();
+
+
+    fileInput.addEventListener("change", function () {
+
+      preview.innerHTML = "";
+
+      [...this.files].forEach(file => {
+
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+
+          preview.innerHTML += `
+<div class="bg-white rounded-lg shadow p-2 text-center">
+
+<img src="${e.target.result}" 
+class="h-24 mx-auto object-contain mb-2">
+
+<p class="text-xs truncate">${file.name}</p>
+
+</div>
+`;
+
+        }
+
+        reader.readAsDataURL(file);
+
       });
+
     });
+
+
+    document.getElementById("preset").addEventListener("change", function () {
+
+      if (!this.value) return;
+
+      const [w, h] = this.value.split("x");
+
+      document.querySelector('[name="width"]').value = w;
+      document.querySelector('[name="height"]').value = h;
+
+    });
+
+
   </script>
+
 </body>
+
 </html>

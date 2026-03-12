@@ -37,3 +37,76 @@ processed/
 
 # Deployment
 deployment.zip
+
+
+
+
+# Python bytecode
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Flask environment files
+
+.env
+.flaskenv
+
+# Logs
+
+*.log
+app.log
+
+# Image upload folders (generated content)
+
+uploads/
+processed/
+
+# Temporary zip downloads
+
+*.zip
+
+# Build / packaging
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE files
+
+.vscode/
+.idea/
+
+# OS generated files
+
+.DS_Store
+Thumbs.db
+
+# Pytest / coverage
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# Node modules (if you later add frontend build tools)
+
+node_modules/
+
+# Mac system files
+
+.AppleDouble
+.LSOverride
