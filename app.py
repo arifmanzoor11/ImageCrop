@@ -209,10 +209,7 @@ def server_error(error):
 
     return render_template("500.html"), 500
 
-
-# ---------- RUN ----------
-if __name__ == "__main__":
-
-    logger.info("Starting Image Processor")
-
+if __name__ == '__main__':
+    logger.info('Starting Image Cropper Application...')
     app.run(debug=True, port=3002)
+    app.run(host="0.0.0.0", port=3002, debug=False)

@@ -1186,3 +1186,23 @@
 2026-03-12 12:30:30,499 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:30:30] "[33mGET /http://waveink.co.uk/ HTTP/1.1[0m" 404 -
 2026-03-12 12:30:32,275 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:30:32] "GET / HTTP/1.1" 200 -
 2026-03-12 12:30:44,522 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 12:30:44] "GET / HTTP/1.1" 200 -
+2026-03-12 12:37:12,755 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-12 12:37:12,801 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-12 12:37:12,964 - INFO - [__main__] - Starting Image Processor
+2026-03-12 12:37:12,992 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-12 12:37:12,999 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-12 12:37:21,067 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-12 12:37:21,095 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-12 12:37:21,202 - INFO - [__main__] - Starting Image Processor
+2026-03-12 12:37:21,221 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-12 12:37:21,226 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-12 12:37:30,303 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-12 12:37:30,343 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-12 12:37:30,455 - INFO - [__main__] - Starting Image Processor
+2026-03-12 12:37:30,474 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-12 12:37:30,479 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-12 12:37:35,523 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-12 12:37:35,562 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-12 12:37:35,678 - INFO - [__main__] - Starting Image Cropper Application...
+2026-03-12 12:37:35,695 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-12 12:37:35,700 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
