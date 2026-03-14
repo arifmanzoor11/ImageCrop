@@ -2,320 +2,487 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Image Processor</title>
+<title>Image Processor</title>
 
-  <meta name="description"
-    content="Free online image cropper and resizer. Convert images to WebP, PNG, JPEG for WordPress and websites.">
+<meta name="description"
+content="Free online image cropper and resizer. Convert images to WebP, PNG, JPEG for WordPress and websites.">
 
-  <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body class="bg-gray-50 text-gray-800">
-  <nav class="bg-white shadow-md sticky top-0 z-50">
 
-    <div class="max-w-7xl mx-auto px-6">
+<!-- NAVBAR -->
+<nav class="bg-white shadow sticky top-0 z-50">
 
-      <div class="flex justify-between items-center h-16">
+<div class="max-w-7xl mx-auto px-6">
 
-        <!-- Logo -->
-        <a href="/" class="text-xl font-bold text-blue-600">
-          ImageProcessor
-        </a>
+<div class="flex justify-between items-center h-16">
 
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-6 items-center">
-          <a href="http://waveink.co.uk/" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium">
-            WaveInk
-          </a>
+<a href="/" class="text-xl font-bold text-blue-600">
+ImageProcessor
+</a>
 
-          <a href="/" class="text-gray-700 hover:text-blue-600 font-medium">
-            Upload
-          </a>
+<div class="hidden md:flex space-x-6 items-center">
 
-          <a href="https://github.com/waveinklimited/" target="_blank" class="text-gray-700 hover:text-blue-600 font-medium">
-            GitHub
-          </a>
+<a href="http://waveink.co.uk/" target="_blank"
+class="text-gray-700 hover:text-blue-600 font-medium">
+WaveInk
+</a>
 
-        </div>
+<a href="/" class="text-gray-700 hover:text-blue-600 font-medium">
+Upload
+</a>
 
-        <!-- Mobile Button -->
-        <button id="menuBtn" class="md:hidden">
-
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-
-          </svg>
-
-        </button>
-
-      </div>
-
-    </div>
-
-    <!-- Mobile Menu -->
-
-    <div id="mobileMenu" class="hidden md:hidden px-6 pb-4">
-
-      <a href="/" class="block py-2 text-gray-700 hover:text-blue-600">
-        Upload
-      </a>
-
-      <a href="/downloads" class="block py-2 text-gray-700 hover:text-blue-600">
-        Downloads
-      </a>
-
-      <a href="https://github.com" target="_blank" class="block py-2 text-gray-700 hover:text-blue-600">
-        GitHub
-      </a>
-
-    </div>
-
-  </nav>
-
-  <script>
-
-    const btn = document.getElementById("menuBtn")
-    const menu = document.getElementById("mobileMenu")
-
-    btn.addEventListener("click", () => {
-
-      menu.classList.toggle("hidden")
-
-    })
-
-  </script>
-  <div class="max-w-5xl mx-auto px-4 py-10">
-
-    <!-- Header -->
-    <div class="text-center mb-10">
-      <h1 class="text-4xl font-bold text-gray-900 mb-3">Image Processor</h1>
-      <p class="text-lg text-gray-600">
-        Crop, resize and convert images instantly for web & WordPress.
-      </p>
-    </div>
-
-
-    <!-- Upload Card -->
-    <div class="bg-white shadow-lg rounded-xl p-8">
-
-      <form id="uploadForm" method="POST" enctype="multipart/form-data">
-
-        <!-- Upload -->
-        <label class="block text-sm font-medium mb-2">Upload Images</label>
-
-        <div
-          class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center cursor-pointer hover:border-blue-500 transition">
-
-          <input type="file" name="file" multiple required id="fileInput" accept="image/*" class="hidden" />
-
-          <p class="text-gray-500">
-            Drag & drop images here or
-            <span class="text-blue-600 font-semibold">browse</span>
-          </p>
-
-        </div>
-
-
-        <!-- Preview -->
-        <div id="imagePreviewContainer" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-        </div>
-
-
-        <!-- Resize Settings -->
-        <div class="grid md:grid-cols-2 gap-6 mt-8">
-
-          <div>
-            <label class="block text-sm font-medium mb-2">Width</label>
-            <input type="number" name="width" value="1200"
-              class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
-          </div>
-
-          <div>
-            <label class="block text-sm font-medium mb-2">Height</label>
-            <input type="number" name="height" value="630"
-              class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
-          </div>
-
-        </div>
-
-
-        <!-- WordPress Presets -->
-        <div class="mt-6">
-
-          <label class="block text-sm font-medium mb-2">
-            WordPress Preset
-          </label>
-
-          <select id="preset" class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
-
-            <option value="">Custom</option>
-            <option value="1200x630">Blog Featured Image</option>
-            <option value="800x800">WooCommerce Product</option>
-            <option value="1920x1080">Hero Banner</option>
-
-          </select>
-
-        </div>
-
-
-        <!-- Format -->
-        <div class="mt-6">
-
-          <label class="block text-sm font-medium mb-2">
-            Output Format
-          </label>
-
-          <select name="format" class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
-
-            <option value="WEBP" selected>WebP (Recommended)</option>
-            <option value="JPEG">JPEG</option>
-            <option value="PNG">PNG</option>
-            <option value="GIF">GIF</option>
-            <option value="BMP">BMP</option>
-            <option value="TIFF">TIFF</option>
-
-          </select>
-
-        </div>
-
-
-        <!-- Resize Mode -->
-        <div class="mt-6">
-
-          <label class="block text-sm font-medium mb-2">
-            Resize Mode
-          </label>
-
-          <select name="mode" class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
-
-            <option value="Cover">Cover</option>
-            <option value="Stretch">Stretch</option>
-
-          </select>
-
-        </div>
-
-
-        <!-- Submit -->
-        <button type="submit"
-          class="mt-8 w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition">
-
-          Upload & Process Images
-
-        </button>
-
-      </form>
-
-    </div>
-
-
-    <!-- Processing UI -->
-    <div id="processingStatus" class="hidden mt-10 bg-white shadow-lg rounded-xl p-6">
-
-      <h3 class="text-xl font-semibold mb-4 text-center">
-        Processing Images
-      </h3>
-
-      <div class="w-full bg-gray-200 rounded-full h-4">
-
-        <div id="processingProgress" class="bg-blue-600 h-4 rounded-full text-xs text-white text-center"
-          style="width:0%">0%</div>
-
-      </div>
-
-      <p class="text-center mt-3 text-gray-600">
-        Processing: <span id="currentFileName">-</span>
-      </p>
-
-    </div>
-
-
-    <!-- Info Section -->
-    <div class="mt-14 space-y-8 text-gray-700">
-
-      <div>
-        <h2 class="text-2xl font-semibold mb-2">How It Works</h2>
-        <ul class="list-disc pl-6 space-y-1">
-          <li>Upload one or multiple images.</li>
-          <li>Select your desired width and height.</li>
-          <li>Choose format like WebP or JPEG.</li>
-          <li>Download optimized images instantly.</li>
-        </ul>
-      </div>
-
-      <div>
-        <h2 class="text-2xl font-semibold mb-2">Features</h2>
-        <ul class="list-disc pl-6 space-y-1">
-          <li>Multiple image upload</li>
-          <li>WordPress optimized presets</li>
-          <li>Fast image processing</li>
-          <li>Download individually or as ZIP</li>
-        </ul>
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <script>
-
-    const fileInput = document.getElementById("fileInput");
-    const preview = document.getElementById("imagePreviewContainer");
-
-    document.querySelector(".border-dashed").onclick = () => fileInput.click();
-
-
-    fileInput.addEventListener("change", function () {
-
-      preview.innerHTML = "";
-
-      [...this.files].forEach(file => {
-
-        const reader = new FileReader();
-
-        reader.onload = function (e) {
-
-          preview.innerHTML += `
-<div class="bg-white rounded-lg shadow p-2 text-center">
-
-<img src="${e.target.result}" 
-class="h-24 mx-auto object-contain mb-2">
-
-<p class="text-xs truncate">${file.name}</p>
+<a href="https://github.com/waveinklimited/"
+target="_blank"
+class="text-gray-700 hover:text-blue-600 font-medium">
+GitHub
+</a>
 
 </div>
-`;
 
-        }
+<button id="menuBtn" class="md:hidden">
 
-        reader.readAsDataURL(file);
+<svg xmlns="http://www.w3.org/2000/svg"
+class="h-6 w-6"
+fill="none"
+viewBox="0 0 24 24"
+stroke="currentColor">
 
-      });
+<path stroke-linecap="round"
+stroke-linejoin="round"
+stroke-width="2"
+d="M4 6h16M4 12h16M4 18h16"/>
 
-    });
+</svg>
+
+</button>
+
+</div>
+
+</div>
+
+<div id="mobileMenu" class="hidden md:hidden px-6 pb-4">
+
+<a href="/" class="block py-2 text-gray-700 hover:text-blue-600">
+Upload
+</a>
+
+<a href="https://github.com"
+target="_blank"
+class="block py-2 text-gray-700 hover:text-blue-600">
+GitHub
+</a>
+
+</div>
+
+</nav>
+
+<!-- PAGE -->
+<div class="max-w-6xl mx-auto px-4 py-12">
+
+<!-- HEADER -->
+<div class="text-center mb-10">
+
+<h1 class="text-4xl font-bold text-gray-900 mb-3">
+Image Processor
+</h1>
+
+<p class="text-lg text-gray-600">
+Crop, resize and convert images instantly for web & WordPress
+</p>
+
+</div>
+
+<!-- CARD -->
+<div class="bg-white shadow-lg rounded-xl p-8">
+
+<form id="uploadForm" method="POST" enctype="multipart/form-data">
+
+<!-- UPLOAD -->
+<label class="block text-sm font-medium mb-3">
+Upload Images
+</label>
+
+<div id="dropArea"
+class="border-2 border-dashed border-gray-300 rounded-xl p-12 text-center cursor-pointer hover:border-blue-500 hover:bg-blue-50 transition">
+
+<input type="file"
+name="file"
+multiple
+required
+id="fileInput"
+accept="image/*"
+class="hidden">
+
+<p class="text-lg text-gray-600">
+Drag & Drop Images Here
+</p>
+
+<p class="text-sm text-gray-400">
+or click to browse files
+</p>
+
+</div>
+
+<!-- PREVIEW -->
+<div id="imagePreviewContainer"
+class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6"></div>
+
+<!-- SETTINGS TITLE -->
+<h2 class="text-xl font-semibold mt-10 mb-6">
+Image Settings
+</h2>
+
+<!-- SETTINGS -->
+<div class="grid md:grid-cols-3 gap-6">
+
+<!-- Size Mode -->
+<div>
+
+<label class="block text-sm font-medium mb-2">
+Size Mode
+</label>
+
+<select name="size_mode"
+id="sizeMode"
+class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
+
+<option value="pixel">Resize by Pixels</option>
+<option value="ratio">Crop by Aspect Ratio</option>
+<option value="original">Keep Original Size</option>
+
+</select>
+
+</div>
+
+<!-- Resize Mode -->
+<div id="resizeModeSection">
+
+<label class="block text-sm font-medium mb-2">
+Resize Mode
+</label>
+
+<select name="mode"
+class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
+
+<option value="Cover">Cover</option>
+<option value="Stretch">Stretch</option>
+
+</select>
+
+</div>
+
+<!-- Aspect Ratio -->
+<div id="ratioSection" class="hidden">
+
+<label class="block text-sm font-medium mb-2">
+Aspect Ratio
+</label>
+
+<select name="ratio"
+class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
+
+<!-- Square -->
+<option value="1:1">1:1 Square</option>
+
+<!-- Standard Photography -->
+<option value="4:3">4:3 Standard</option>
+<option value="3:2">3:2 Photo</option>
+<option value="5:4">5:4 Photo</option>
+
+<!-- Widescreen -->
+<option value="16:9">16:9 Widescreen</option>
+<option value="21:9">21:9 Ultrawide</option>
+
+<!-- Portrait / Vertical -->
+<option value="2:3">2:3 Portrait</option>
+<option value="3:4">3:4 Portrait</option>
+<option value="4:5">4:5 Instagram Portrait</option>
+
+<!-- Social Media -->
+<option value="9:16">9:16 Story / Reels</option>
+<option value="1.91:1">1.91:1 Facebook Link</option>
+
+<!-- Classic / Print -->
+<option value="7:5">7:5 Print</option>
+<option value="10:8">10:8 Print</option>
+
+</select>
+</div>
+
+</div>
+
+<!-- WORDPRESS PRESETS (PIXEL ONLY) -->
+<div id="presetSection" class="mt-6">
+
+<label class="block text-sm font-medium mb-2">
+WordPress Preset
+</label>
+
+<select id="preset"
+class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
+
+<option value="">Custom</option>
+<option value="1200x630">Blog Featured Image</option>
+<option value="800x800">WooCommerce Product</option>
+<option value="1920x1080">Hero Banner</option>
+
+</select>
+
+</div>
+
+<!-- WIDTH HEIGHT -->
+<div id="pixelSizeSection"
+class="grid md:grid-cols-2 gap-6 mt-6">
+
+<div>
+
+<label class="block text-sm font-medium mb-2">
+Width
+</label>
+
+<input type="number"
+name="width"
+value="1200"
+class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
+
+</div>
+
+<div>
+
+<label class="block text-sm font-medium mb-2">
+Height
+</label>
+
+<input type="number"
+name="height"
+value="630"
+class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
+
+</div>
+
+</div>
 
 
-    document.getElementById("preset").addEventListener("change", function () {
+<!-- FORMAT -->
+<div class="grid md:grid-cols-2 gap-6 mt-8">
 
-      if (!this.value) return;
+<div>
 
-      const [w, h] = this.value.split("x");
+<label class="block text-sm font-medium mb-2">
+Output Format
+</label>
 
-      document.querySelector('[name="width"]').value = w;
-      document.querySelector('[name="height"]').value = h;
+<select name="format"
+class="w-full border rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
 
-    });
+<option value="WEBP" selected>WebP (Recommended)</option>
+<option value="JPEG">JPEG</option>
+<option value="PNG">PNG</option>
+<option value="GIF">GIF</option>
+<option value="BMP">BMP</option>
+<option value="TIFF">TIFF</option>
+<option value="SVG">SVG</option>
+<option value="ICO">ICO</option>
+
+</select>
+
+</div>
+
+</div>
+
+<!-- BUTTON -->
+<button type="submit"
+class="mt-10 w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg shadow-md transition">
+
+Upload & Process Images
+
+</button>
+
+</form>
+
+</div>
+
+<!-- INFO -->
+<div class="mt-16 space-y-8 text-gray-700">
+
+<div>
+
+<h2 class="text-2xl font-semibold mb-2">
+How It Works
+</h2>
+
+<ul class="list-disc pl-6 space-y-1">
+
+<li>Upload one or multiple images</li>
+<li>Select resize or crop settings</li>
+<li>Choose output format</li>
+<li>Download optimized images instantly</li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h2 class="text-2xl font-semibold mb-2">
+Features
+</h2>
+
+<ul class="list-disc pl-6 space-y-1">
+
+<li>Multiple image upload</li>
+<li>Aspect ratio crop</li>
+<li>Fast server processing</li>
+<li>Web optimized formats</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+/* MOBILE MENU */
+
+const btn=document.getElementById("menuBtn")
+const menu=document.getElementById("mobileMenu")
+
+btn.onclick=()=>menu.classList.toggle("hidden")
+
+/* FILE UPLOAD */
+
+const fileInput=document.getElementById("fileInput")
+const preview=document.getElementById("imagePreviewContainer")
+const dropArea=document.getElementById("dropArea")
+
+dropArea.onclick=()=>fileInput.click()
+
+dropArea.addEventListener("dragover",e=>{
+e.preventDefault()
+dropArea.classList.add("border-blue-500")
+})
+
+dropArea.addEventListener("dragleave",()=>{
+dropArea.classList.remove("border-blue-500")
+})
+
+dropArea.addEventListener("drop",e=>{
+e.preventDefault()
+fileInput.files=e.dataTransfer.files
+showPreview()
+})
+
+fileInput.addEventListener("change",showPreview)
+
+function showPreview(){
+
+preview.innerHTML=""
+
+Array.from(fileInput.files).forEach(file=>{
+
+const reader=new FileReader()
+
+reader.onload=e=>{
+
+preview.innerHTML+=`
+
+<div class="bg-gray-50 border rounded-lg p-3 text-center">
+
+<img src="${e.target.result}"
+class="h-24 mx-auto object-contain mb-2 rounded">
+
+<p class="text-xs text-gray-600 truncate">
+${file.name}
+</p>
+
+</div>
+
+`
+
+}
+
+reader.readAsDataURL(file)
+
+})
+
+}
 
 
-  </script>
+/* WORDPRESS PRESET AUTO SIZE */
+
+const preset = document.getElementById("preset")
+
+preset.addEventListener("change", function(){
+
+if(!this.value) return
+
+const [width, height] = this.value.split("x")
+
+document.querySelector('[name="width"]').value = width
+document.querySelector('[name="height"]').value = height
+
+})
+
+
+/* SIZE MODE CONTROL */
+
+const sizeMode = document.getElementById("sizeMode")
+
+const pixelSection = document.getElementById("pixelSizeSection")
+const ratioSection = document.getElementById("ratioSection")
+const resizeModeSection = document.getElementById("resizeModeSection")
+const presetSection = document.getElementById("presetSection")
+
+function updateModeUI(){
+
+const mode = sizeMode.value
+
+if(mode === "pixel"){
+
+pixelSection.style.display = "grid"
+resizeModeSection.style.display = "block"
+presetSection.style.display = "block"
+
+ratioSection.style.display = "none"
+
+}
+
+else if(mode === "ratio"){
+
+ratioSection.style.display = "block"
+
+pixelSection.style.display = "none"
+resizeModeSection.style.display = "none"
+presetSection.style.display = "none"
+
+}
+
+else{
+
+pixelSection.style.display = "none"
+ratioSection.style.display = "none"
+resizeModeSection.style.display = "none"
+presetSection.style.display = "none"
+
+}
+
+}
+
+sizeMode.addEventListener("change", updateModeUI)
+
+updateModeUI()
+
+</script>
 
 </body>
-
 </html>

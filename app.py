@@ -93,6 +93,31 @@ def resize_image(image, target_width, target_height, mode):
     return image.crop((left, top, left + target_width, top + target_height))
 
 
+def crop_by_ratio(image, ratio):
+
+    try:
+        rw, rh = map(float, ratio.split(":"))
+    except:
+        return image
+
+    img_w, img_h = image.size
+
+    img_ratio = img_w / img_h
+    target_ratio = rw / rh
+
+    if img_ratio > target_ratio:
+        new_w = int(img_h * target_ratio)
+        new_h = img_h
+    else:
+        new_w = img_w
+        new_h = int(img_w / target_ratio)
+
+    left = (img_w - new_w) // 2
+    top = (img_h - new_h) // 2
+
+    return image.crop((left, top, left + new_w, top + new_h))
+
+
 # ---------- UPLOAD ----------
 @app.route("/", methods=["GET", "POST"])
 def upload_file():
@@ -112,6 +137,9 @@ def upload_file():
             format = request.form.get("format", "WEBP").upper()
             mode = request.form.get("mode", "Cover")
 
+            size_mode = request.form.get("size_mode", "pixel")
+            ratio = request.form.get("ratio", "1:1")
+
             clear_processed_folder()
 
             processed_files = []
@@ -129,7 +157,18 @@ def upload_file():
 
                         img.load()
 
-                        processed_img = resize_image(img, width, height, mode)
+                        # ---------- SIZE MODE ----------
+                        if size_mode == "original":
+
+                            processed_img = img.copy()
+
+                        elif size_mode == "ratio":
+
+                            processed_img = crop_by_ratio(img, ratio)
+
+                        else:
+
+                            processed_img = resize_image(img, width, height, mode)
 
                         if format == "JPEG" and processed_img.mode == "RGBA":
                             processed_img = processed_img.convert("RGB")
@@ -167,10 +206,12 @@ def upload_file():
 def serve_image(filename):
     return send_from_directory(PROCESSED_FOLDER, filename)
 
+
 @app.route("/download/<filename>")
 def download_file(filename):
     path = os.path.join(PROCESSED_FOLDER, filename)
     return send_file(path, as_attachment=True)
+
 
 # ---------- DOWNLOAD ZIP ----------
 @app.route("/download_zip")
@@ -197,6 +238,8 @@ def download_zip():
         return response
 
     return send_file(zip_path, as_attachment=True)
+
+
 # ---------- ERROR PAGES ----------
 @app.errorhandler(404)
 def not_found(error):
@@ -209,7 +252,7 @@ def server_error(error):
 
     return render_template("500.html"), 500
 
+
 if __name__ == '__main__':
     logger.info('Starting Image Cropper Application...')
-    app.run(debug=True, port=3002)
-    app.run(host="0.0.0.0", port=3002, debug=False)
+    app.run(host="0.0.0.0", port=3002, debug=True)

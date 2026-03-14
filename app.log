@@ -1206,3 +1206,104 @@
 2026-03-12 12:37:35,678 - INFO - [__main__] - Starting Image Cropper Application...
 2026-03-12 12:37:35,695 - WARNING - [werkzeug] -  * Debugger is active!
 2026-03-12 12:37:35,700 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-12 14:26:46,588 - INFO - [__main__] - Deleted old file: processed/pagespeed.webp
+2026-03-12 14:26:46,589 - INFO - [__main__] - Deleted old file: processed/WordPress & WooCommerce Speed Optimization Service.webp
+2026-03-12 14:26:46,589 - INFO - [__main__] - Deleted old file: processed/WordPress Website Running Slow.webp
+2026-03-12 14:26:46,598 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 14:26:46] "GET / HTTP/1.1" 200 -
+2026-03-12 14:26:47,076 - INFO - [werkzeug] - 127.0.0.1 - - [12/Mar/2026 14:26:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-13 21:16:03,623 - INFO - [__main__] - Starting Image Cropper Application...
+2026-03-13 21:16:03,679 - INFO - [werkzeug] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3002
+2026-03-13 21:16:03,680 - INFO - [werkzeug] - [33mPress CTRL+C to quit[0m
+2026-03-13 21:16:03,680 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-13 21:16:03,793 - INFO - [__main__] - Starting Image Cropper Application...
+2026-03-13 21:16:03,817 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-13 21:16:03,827 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-13 21:16:37,484 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:16:37] "GET / HTTP/1.1" 200 -
+2026-03-13 21:16:37,907 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:16:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-13 21:18:01,706 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-13 21:18:01,735 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-13 21:18:01,935 - INFO - [__main__] - Starting Image Cropper Application...
+2026-03-13 21:18:01,962 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-13 21:18:01,970 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-13 21:20:52,549 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:20:52] "GET / HTTP/1.1" 200 -
+2026-03-13 21:24:11,747 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:24:11] "GET / HTTP/1.1" 200 -
+2026-03-13 21:24:50,630 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:24:50] "GET / HTTP/1.1" 200 -
+2026-03-13 21:25:04,666 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:25:04] "GET / HTTP/1.1" 200 -
+2026-03-13 21:25:07,479 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:25:07] "GET / HTTP/1.1" 200 -
+2026-03-13 21:25:50,599 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:25:50] "GET / HTTP/1.1" 200 -
+2026-03-13 21:26:34,853 - INFO - [__main__] - ====== New Image Request ======
+2026-03-13 21:26:35,513 - INFO - [__main__] - Processed: 1. Pomellato.webp
+2026-03-13 21:26:35,677 - INFO - [__main__] - Processed: 2.Redtreat.webp
+2026-03-13 21:26:35,884 - INFO - [__main__] - Processed: 3. Chef Eugenio Gurzi.webp
+2026-03-13 21:26:36,140 - INFO - [__main__] - Processed: 4. Hockerty - Photo Campaign Production instead of Hockerty events in Florence.webp
+2026-03-13 21:27:08,675 - INFO - [__main__] - Processed: 5. Thomas Luthi.webp
+2026-03-13 21:27:08,919 - INFO - [__main__] - Processed: 6.Ms Chocolats.webp
+2026-03-13 21:27:09,121 - INFO - [__main__] - Processed: 7. Mad Hippies.webp
+2026-03-13 21:27:09,330 - INFO - [__main__] - Processed: 8. Hidehere.webp
+2026-03-13 21:27:09,337 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:27:09] "POST / HTTP/1.1" 200 -
+2026-03-13 21:27:09,396 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:27:09] "GET /processed/1.%20Pomellato.webp HTTP/1.1" 200 -
+2026-03-13 21:27:09,397 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:27:09] "GET /processed/3.%20Chef%20Eugenio%20Gurzi.webp HTTP/1.1" 200 -
+2026-03-13 21:27:09,397 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:27:09] "GET /processed/5.%20Thomas%20Luthi.webp HTTP/1.1" 200 -
+2026-03-13 21:27:09,397 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:27:09] "GET /processed/4.%20Hockerty%20-%20Photo%20Campaign%20Production%20instead%20of%20Hockerty%20events%20in%20Florence.webp HTTP/1.1" 200 -
+2026-03-13 21:27:09,398 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:27:09] "GET /processed/2.Redtreat.webp HTTP/1.1" 200 -
+2026-03-13 21:27:09,398 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:27:09] "GET /processed/6.Ms%20Chocolats.webp HTTP/1.1" 200 -
+2026-03-13 21:27:09,410 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:27:09] "GET /processed/7.%20Mad%20Hippies.webp HTTP/1.1" 200 -
+2026-03-13 21:27:09,415 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:27:09] "GET /processed/8.%20Hidehere.webp HTTP/1.1" 200 -
+2026-03-13 21:27:15,163 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:27:15] "GET /download_zip HTTP/1.1" 200 -
+2026-03-13 21:27:36,605 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:27:36] "GET / HTTP/1.1" 200 -
+2026-03-13 21:27:39,382 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:27:39] "GET / HTTP/1.1" 200 -
+2026-03-13 21:30:47,875 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-13 21:30:47,935 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-13 21:30:48,139 - INFO - [__main__] - Starting Image Cropper Application...
+2026-03-13 21:30:48,168 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-13 21:30:48,174 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-13 21:39:06,547 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:39:06] "GET / HTTP/1.1" 200 -
+2026-03-13 21:40:43,677 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:40:43] "GET / HTTP/1.1" 200 -
+2026-03-13 21:40:45,751 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:40:45] "GET / HTTP/1.1" 200 -
+2026-03-13 21:43:08,937 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:43:08] "GET / HTTP/1.1" 200 -
+2026-03-13 21:45:41,999 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:45:41] "GET / HTTP/1.1" 200 -
+2026-03-13 21:49:03,451 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:49:03] "GET / HTTP/1.1" 200 -
+2026-03-13 21:49:54,557 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:49:54] "GET / HTTP/1.1" 200 -
+2026-03-13 21:50:52,080 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:50:52] "GET / HTTP/1.1" 200 -
+2026-03-13 21:52:37,094 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:52:37] "GET / HTTP/1.1" 200 -
+2026-03-13 21:54:06,756 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:54:06] "GET / HTTP/1.1" 200 -
+2026-03-13 21:54:55,586 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-13 21:54:55,623 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-13 21:54:55,871 - INFO - [__main__] - Starting Image Cropper Application...
+2026-03-13 21:54:55,900 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-13 21:54:55,908 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-13 21:54:56,923 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-13 21:54:56,953 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-13 21:54:57,073 - INFO - [__main__] - Starting Image Cropper Application...
+2026-03-13 21:54:57,092 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-13 21:54:57,097 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-13 21:55:07,180 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-13 21:55:07,206 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-13 21:55:07,322 - INFO - [__main__] - Starting Image Cropper Application...
+2026-03-13 21:55:07,341 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-13 21:55:07,346 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-13 21:55:08,356 - INFO - [werkzeug] -  * Detected change in '/Users/arifmanzoor/Desktop/ImageCrop/app.py', reloading
+2026-03-13 21:55:08,380 - INFO - [werkzeug] -  * Restarting with stat
+2026-03-13 21:55:08,495 - INFO - [__main__] - Starting Image Cropper Application...
+2026-03-13 21:55:08,516 - WARNING - [werkzeug] -  * Debugger is active!
+2026-03-13 21:55:08,521 - INFO - [werkzeug] -  * Debugger PIN: 447-835-195
+2026-03-13 21:55:11,561 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:55:11] "GET / HTTP/1.1" 200 -
+2026-03-13 21:55:48,119 - INFO - [__main__] - ====== New Image Request ======
+2026-03-13 21:55:48,541 - INFO - [__main__] - Processed: 1. Pomellato.webp
+2026-03-13 21:55:48,695 - INFO - [__main__] - Processed: 2.Redtreat.webp
+2026-03-13 21:55:48,874 - INFO - [__main__] - Processed: 3. Chef Eugenio Gurzi.webp
+2026-03-13 21:55:49,041 - INFO - [__main__] - Processed: 4. Hockerty - Photo Campaign Production instead of Hockerty events in Florence.webp
+2026-03-13 21:56:21,147 - INFO - [__main__] - Processed: 5. Thomas Luthi.webp
+2026-03-13 21:56:21,368 - INFO - [__main__] - Processed: 6.Ms Chocolats.webp
+2026-03-13 21:56:21,551 - INFO - [__main__] - Processed: 7. Mad Hippies.webp
+2026-03-13 21:56:21,738 - INFO - [__main__] - Processed: 8. Hidehere.webp
+2026-03-13 21:56:21,744 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:56:21] "POST / HTTP/1.1" 200 -
+2026-03-13 21:56:21,800 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:56:21] "GET /processed/1.%20Pomellato.webp HTTP/1.1" 200 -
+2026-03-13 21:56:21,800 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:56:21] "GET /processed/2.Redtreat.webp HTTP/1.1" 200 -
+2026-03-13 21:56:21,802 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:56:21] "GET /processed/4.%20Hockerty%20-%20Photo%20Campaign%20Production%20instead%20of%20Hockerty%20events%20in%20Florence.webp HTTP/1.1" 200 -
+2026-03-13 21:56:21,802 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:56:21] "GET /processed/3.%20Chef%20Eugenio%20Gurzi.webp HTTP/1.1" 200 -
+2026-03-13 21:56:21,804 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:56:21] "GET /processed/6.Ms%20Chocolats.webp HTTP/1.1" 200 -
+2026-03-13 21:56:21,804 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:56:21] "GET /processed/5.%20Thomas%20Luthi.webp HTTP/1.1" 200 -
+2026-03-13 21:56:21,818 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:56:21] "GET /processed/7.%20Mad%20Hippies.webp HTTP/1.1" 200 -
+2026-03-13 21:56:21,820 - INFO - [werkzeug] - 127.0.0.1 - - [13/Mar/2026 21:56:21] "GET /processed/8.%20Hidehere.webp HTTP/1.1" 200 -
