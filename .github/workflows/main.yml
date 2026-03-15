@@ -10,7 +10,6 @@ jobs:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
 
-
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
@@ -21,18 +20,6 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        dangerous-clean-slate: true
         local-dir: ./
-        server-dir: /public_html/
-        exclude: |
-          .git/
-          .git/**
-          .github/
-          .github/**
-          node_modules/
-          node_modules/**
-          __pycache__/
-          **/__pycache__/**
-          **/*.pyc
-          venv/
-          **/venv/**
+        server-dir: public_html
+        dangerous-clean-slate: false
