@@ -25,6 +25,7 @@ var/
 .DS_Store
 venv/
 ENV/
+.log
 
 # IDE
 .idea/
