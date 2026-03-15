@@ -3,7 +3,7 @@ name: 🚀 Deploy website on push
 on:
   push:
     branches:
-      - push
+      - master
 
 jobs:
   web-deploy:

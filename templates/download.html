@@ -4,98 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Download Processed Images</title>
-
   <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 
-<body class="bg-gray-50 text-gray-800">
-
+<body class="bg-gray-50 text-gray-800"> 
   <!-- HEADER -->
-
   <div class="bg-gradient-to-r from-blue-600 to-cyan-400 text-white py-10 text-center shadow">
-
     <h1 class="text-4xl font-bold mb-2">
       Your Processed Images
     </h1>
-
     <p class="text-lg opacity-90">
       Download individually or grab everything as a ZIP
     </p>
-
   </div>
-
-
-
-  <div class="max-w-7xl mx-auto px-6 py-10">
-
+  <div class="max-w-7xl mx-auto px-6 py-10"> 
     <!-- IMAGE GRID -->
-
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-      {% for file in files %}
-
-      <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col">
-
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"> {% for file in files %} <div
+        class="bg-white rounded-xl shadow hover:shadow-lg transition p-4 flex flex-col"> 
         <!-- IMAGE PREVIEW -->
-
-        <div class="h-48 flex items-center justify-center bg-gray-100 rounded-lg mb-4">
-
-          <img src="{{ url_for('serve_image', filename=file) }}" alt="{{ file }}" class="max-h-44 object-contain">
-
-        </div>
-
-
+        <div class="h-48 flex items-center justify-center bg-gray-100 rounded-lg mb-4"> <img
+            src="{{ url_for('serve_image', filename=file) }}" alt="{{ file }}" class="max-h-44 object-contain"> </div>
         <div class="flex-1 flex flex-col">
-
           <p class="text-sm text-gray-500 break-all mb-3">
             {{ file }}
-          </p>
-
-          <a href="{{ url_for('download_file', filename=file) }}"
-            class="mt-auto bg-green-500 hover:bg-green-600 text-white text-center py-2 rounded-lg transition">
-
-            Download
-
+          </p> <a href="{{ url_for('download_file', filename=file) }}"
+            class="mt-auto bg-green-500 hover:bg-green-600 text-white text-center py-2 rounded-lg transition"> Download
           </a>
-
         </div>
-
-      </div>
-
-      {% endfor %}
-
-    </div>
-
-  </div>
-
-
-
-  <!-- FLOATING DOWNLOAD ZIP -->
-
-  <a href="{{ url_for('download_zip') }}"
+      </div> {% endfor %} </div>
+      <a href="{{ url_for('download_zip') }}"
     class="fixed bottom-8 right-8 bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 rounded-full shadow-lg transition transform hover:scale-105">
-
-    Download All (ZIP)
-
-  </a>
-
-
-
-  <!-- PROCESS MORE -->
-
-  <div class="text-center pb-16">
-
-    <a href="/" class="bg-gray-700 hover:bg-gray-800 text-white px-8 py-3 rounded-lg text-lg">
-
-      Process More Images
-
-    </a>
-
-  </div>
-
+    Download All (ZIP) </a> 
+  <div class="text-center pb-16"> <a href="/"
+      class="bg-gray-700 hover:bg-gray-800 text-white px-8 py-3 rounded-lg text-lg"> Process More Images </a> </div>
 </body>
 
 </html>
