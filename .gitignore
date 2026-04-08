@@ -38,8 +38,7 @@ processed/
 
 # Deployment
 deployment.zip
-
-
+.ftp-deploy-sync-state.json
 
 
 # Python bytecode
@@ -89,8 +88,6 @@ dist/
 .idea/
 
 # OS generated files
-
-.DS_Store
 Thumbs.db
 
 # Pytest / coverage
